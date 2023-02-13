@@ -23,6 +23,9 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="クイズを開始"/>
+                    <connections>
+                        <action selector="quizStartButton:" destination="-1" eventType="touchUpInside" id="Es4-AP-5pu"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
