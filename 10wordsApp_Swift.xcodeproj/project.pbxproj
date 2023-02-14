@@ -11,6 +11,14 @@
 		9936AC1A299A975A00F8C258 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9936AC18299A975A00F8C258 /* HomeViewController.xib */; };
 		9936AC1E299AA18900F8C258 /* QuizSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9936AC1C299AA18900F8C258 /* QuizSelectViewController.swift */; };
 		9936AC1F299AA18900F8C258 /* QuizSelectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9936AC1D299AA18900F8C258 /* QuizSelectViewController.xib */; };
+		9936AC23299BD6C000F8C258 /* QuizShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9936AC21299BD6C000F8C258 /* QuizShowViewController.swift */; };
+		9936AC24299BD6C000F8C258 /* QuizShowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9936AC22299BD6C000F8C258 /* QuizShowViewController.xib */; };
+		9936AC29299BD99800F8C258 /* QuizDeleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9936AC27299BD99800F8C258 /* QuizDeleteViewController.swift */; };
+		9936AC2A299BD99800F8C258 /* QuizDeleteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9936AC28299BD99800F8C258 /* QuizDeleteViewController.xib */; };
+		9936AC2D299BD9AD00F8C258 /* QuizListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9936AC2B299BD9AD00F8C258 /* QuizListViewController.swift */; };
+		9936AC2E299BD9AD00F8C258 /* QuizListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9936AC2C299BD9AD00F8C258 /* QuizListViewController.xib */; };
+		9936AC32299BDB5300F8C258 /* QuizAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9936AC30299BDB5300F8C258 /* QuizAddViewController.swift */; };
+		9936AC33299BDB5300F8C258 /* QuizAddViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9936AC31299BDB5300F8C258 /* QuizAddViewController.xib */; };
 		99E459C6299A720200E649C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E459C5299A720200E649C1 /* AppDelegate.swift */; };
 		99E459C8299A720200E649C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E459C7299A720200E649C1 /* SceneDelegate.swift */; };
 		99E459CF299A720400E649C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99E459CE299A720400E649C1 /* Assets.xcassets */; };
@@ -22,6 +30,14 @@
 		9936AC18299A975A00F8C258 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		9936AC1C299AA18900F8C258 /* QuizSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizSelectViewController.swift; sourceTree = "<group>"; };
 		9936AC1D299AA18900F8C258 /* QuizSelectViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuizSelectViewController.xib; sourceTree = "<group>"; };
+		9936AC21299BD6C000F8C258 /* QuizShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizShowViewController.swift; sourceTree = "<group>"; };
+		9936AC22299BD6C000F8C258 /* QuizShowViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuizShowViewController.xib; sourceTree = "<group>"; };
+		9936AC27299BD99800F8C258 /* QuizDeleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizDeleteViewController.swift; sourceTree = "<group>"; };
+		9936AC28299BD99800F8C258 /* QuizDeleteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuizDeleteViewController.xib; sourceTree = "<group>"; };
+		9936AC2B299BD9AD00F8C258 /* QuizListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizListViewController.swift; sourceTree = "<group>"; };
+		9936AC2C299BD9AD00F8C258 /* QuizListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuizListViewController.xib; sourceTree = "<group>"; };
+		9936AC30299BDB5300F8C258 /* QuizAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizAddViewController.swift; sourceTree = "<group>"; };
+		9936AC31299BDB5300F8C258 /* QuizAddViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuizAddViewController.xib; sourceTree = "<group>"; };
 		99E459C2299A720200E649C1 /* 10wordsApp_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 10wordsApp_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99E459C5299A720200E649C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99E459C7299A720200E649C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +73,42 @@
 				9936AC1D299AA18900F8C258 /* QuizSelectViewController.xib */,
 			);
 			path = QuizSelect;
+			sourceTree = "<group>";
+		};
+		9936AC20299BD69900F8C258 /* QuizShow */ = {
+			isa = PBXGroup;
+			children = (
+				9936AC21299BD6C000F8C258 /* QuizShowViewController.swift */,
+				9936AC22299BD6C000F8C258 /* QuizShowViewController.xib */,
+			);
+			path = QuizShow;
+			sourceTree = "<group>";
+		};
+		9936AC25299BD94500F8C258 /* QuizDelete */ = {
+			isa = PBXGroup;
+			children = (
+				9936AC27299BD99800F8C258 /* QuizDeleteViewController.swift */,
+				9936AC28299BD99800F8C258 /* QuizDeleteViewController.xib */,
+			);
+			path = QuizDelete;
+			sourceTree = "<group>";
+		};
+		9936AC26299BD97500F8C258 /* QuizList */ = {
+			isa = PBXGroup;
+			children = (
+				9936AC2B299BD9AD00F8C258 /* QuizListViewController.swift */,
+				9936AC2C299BD9AD00F8C258 /* QuizListViewController.xib */,
+			);
+			path = QuizList;
+			sourceTree = "<group>";
+		};
+		9936AC2F299BDB3900F8C258 /* QuizAdd */ = {
+			isa = PBXGroup;
+			children = (
+				9936AC30299BDB5300F8C258 /* QuizAddViewController.swift */,
+				9936AC31299BDB5300F8C258 /* QuizAddViewController.xib */,
+			);
+			path = QuizAdd;
 			sourceTree = "<group>";
 		};
 		99E459B9299A720200E649C1 = {
@@ -131,8 +183,12 @@
 		99E459DE299A954700E649C1 /* Presentations */ = {
 			isa = PBXGroup;
 			children = (
-				9936AC1B299AA15600F8C258 /* QuizSelect */,
 				9936AC16299A969200F8C258 /* Home */,
+				9936AC1B299AA15600F8C258 /* QuizSelect */,
+				9936AC20299BD69900F8C258 /* QuizShow */,
+				9936AC2F299BDB3900F8C258 /* QuizAdd */,
+				9936AC25299BD94500F8C258 /* QuizDelete */,
+				9936AC26299BD97500F8C258 /* QuizList */,
 			);
 			path = Presentations;
 			sourceTree = "<group>";
@@ -195,9 +251,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9936AC2E299BD9AD00F8C258 /* QuizListViewController.xib in Resources */,
+				9936AC2A299BD99800F8C258 /* QuizDeleteViewController.xib in Resources */,
 				99E459D2299A720400E649C1 /* LaunchScreen.storyboard in Resources */,
+				9936AC33299BDB5300F8C258 /* QuizAddViewController.xib in Resources */,
 				9936AC1F299AA18900F8C258 /* QuizSelectViewController.xib in Resources */,
 				99E459CF299A720400E649C1 /* Assets.xcassets in Resources */,
+				9936AC24299BD6C000F8C258 /* QuizShowViewController.xib in Resources */,
 				9936AC1A299A975A00F8C258 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,10 +269,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9936AC2D299BD9AD00F8C258 /* QuizListViewController.swift in Sources */,
 				99E459C6299A720200E649C1 /* AppDelegate.swift in Sources */,
 				9936AC1E299AA18900F8C258 /* QuizSelectViewController.swift in Sources */,
 				9936AC19299A975A00F8C258 /* HomeViewController.swift in Sources */,
 				99E459C8299A720200E649C1 /* SceneDelegate.swift in Sources */,
+				9936AC29299BD99800F8C258 /* QuizDeleteViewController.swift in Sources */,
+				9936AC23299BD6C000F8C258 /* QuizShowViewController.swift in Sources */,
+				9936AC32299BDB5300F8C258 /* QuizAddViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
