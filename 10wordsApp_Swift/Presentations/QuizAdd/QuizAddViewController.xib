@@ -10,6 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QuizAddViewController" customModule="_0wordsApp_Swift" customModuleProvider="target">
             <connections>
+                <outlet property="englishTextField" destination="Arp-B8-SnL" id="z1O-xA-mcS"/>
+                <outlet property="japaneseTextField" destination="bmS-sC-632" id="wwW-eA-eJf"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -41,6 +43,9 @@
                             <rect key="frame" x="43.000000000000007" y="295.33333333333331" width="110.66666666666669" height="34.333333333333314"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title="単語を登録"/>
+                            <connections>
+                                <action selector="registerButton:" destination="-1" eventType="touchUpInside" id="rIS-xr-FkR"/>
+                            </connections>
                         </button>
                     </subviews>
                     <constraints>
