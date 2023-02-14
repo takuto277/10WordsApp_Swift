@@ -9,21 +9,17 @@ import UIKit
 
 class QuizAddViewController: UIViewController {
 
+    
+    
+    @IBOutlet weak var englishTextField: UITextField!
+    @IBOutlet weak var japaneseTextField: UITextField!
+    
+    
+    @IBAction func registerButton(_ sender: Any) {
+        //TODO: Realmに登録
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
