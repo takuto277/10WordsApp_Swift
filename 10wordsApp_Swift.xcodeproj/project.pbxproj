@@ -19,6 +19,9 @@
 		9936AC2E299BD9AD00F8C258 /* QuizListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9936AC2C299BD9AD00F8C258 /* QuizListViewController.xib */; };
 		9936AC32299BDB5300F8C258 /* QuizAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9936AC30299BDB5300F8C258 /* QuizAddViewController.swift */; };
 		9936AC33299BDB5300F8C258 /* QuizAddViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9936AC31299BDB5300F8C258 /* QuizAddViewController.xib */; };
+		9936AC35299CE0E600F8C258 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9936AC34299CE0E600F8C258 /* HomePresenter.swift */; };
+		9936AC37299CE13300F8C258 /* HomeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9936AC36299CE13300F8C258 /* HomeProtocol.swift */; };
+		9936AC39299CE9AD00F8C258 /* Plan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9936AC38299CE9AD00F8C258 /* Plan.swift */; };
 		99E459C6299A720200E649C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E459C5299A720200E649C1 /* AppDelegate.swift */; };
 		99E459C8299A720200E649C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E459C7299A720200E649C1 /* SceneDelegate.swift */; };
 		99E459CF299A720400E649C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99E459CE299A720400E649C1 /* Assets.xcassets */; };
@@ -38,6 +41,9 @@
 		9936AC2C299BD9AD00F8C258 /* QuizListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuizListViewController.xib; sourceTree = "<group>"; };
 		9936AC30299BDB5300F8C258 /* QuizAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizAddViewController.swift; sourceTree = "<group>"; };
 		9936AC31299BDB5300F8C258 /* QuizAddViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuizAddViewController.xib; sourceTree = "<group>"; };
+		9936AC34299CE0E600F8C258 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		9936AC36299CE13300F8C258 /* HomeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocol.swift; sourceTree = "<group>"; };
+		9936AC38299CE9AD00F8C258 /* Plan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plan.swift; sourceTree = "<group>"; };
 		99E459C2299A720200E649C1 /* 10wordsApp_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 10wordsApp_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99E459C5299A720200E649C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99E459C7299A720200E649C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +68,8 @@
 			children = (
 				9936AC17299A975A00F8C258 /* HomeViewController.swift */,
 				9936AC18299A975A00F8C258 /* HomeViewController.xib */,
+				9936AC34299CE0E600F8C258 /* HomePresenter.swift */,
+				9936AC36299CE13300F8C258 /* HomeProtocol.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -169,6 +177,7 @@
 		99E459DC299A951800E649C1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				9936AC38299CE9AD00F8C258 /* Plan.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -273,8 +282,11 @@
 				99E459C6299A720200E649C1 /* AppDelegate.swift in Sources */,
 				9936AC1E299AA18900F8C258 /* QuizSelectViewController.swift in Sources */,
 				9936AC19299A975A00F8C258 /* HomeViewController.swift in Sources */,
+				9936AC39299CE9AD00F8C258 /* Plan.swift in Sources */,
+				9936AC37299CE13300F8C258 /* HomeProtocol.swift in Sources */,
 				99E459C8299A720200E649C1 /* SceneDelegate.swift in Sources */,
 				9936AC29299BD99800F8C258 /* QuizDeleteViewController.swift in Sources */,
+				9936AC35299CE0E600F8C258 /* HomePresenter.swift in Sources */,
 				9936AC23299BD6C000F8C258 /* QuizShowViewController.swift in Sources */,
 				9936AC32299BDB5300F8C258 /* QuizAddViewController.swift in Sources */,
 			);

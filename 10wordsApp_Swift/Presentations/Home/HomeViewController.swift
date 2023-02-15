@@ -8,13 +8,19 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+    private let homePresenter: HomeProtocol = HomePresenter()
+    @IBOutlet weak var planSwitch: UISwitch!
     
     init() {
-        super.init(nibName: "HomeViewController", bundle: nil)
+        super.init(nibName: String(describing: HomeViewController.self), bundle: nil)
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    @IBAction func planSwitchButton(_ sender: Any) {
+        self.homePresenter.planChange(planSwitch.isOn)
     }
     
     @IBAction func quizStartButton(_ sender: Any){
