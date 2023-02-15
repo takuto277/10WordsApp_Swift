@@ -8,10 +8,11 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-    private let homePresenter: HomeProtocol = HomePresenter()
+    private let presenter: HomeProtocol
     @IBOutlet weak var planSwitch: UISwitch!
     
-    init() {
+    init(presenter: HomeProtocol) {
+        self.presenter = presenter
         super.init(nibName: String(describing: HomeViewController.self), bundle: nil)
     }
     
@@ -20,14 +21,11 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func planSwitchButton(_ sender: Any) {
-        self.homePresenter.planChange(planSwitch.isOn)
+        self.presenter.planChange(planSwitch.isOn)
     }
     
     @IBAction func quizStartButton(_ sender: Any){
-        //TODO: ViewControllerFactoryにて実装予定
-        let quizSelectViewController = QuizSelectViewController()
-        quizSelectViewController.modalPresentationStyle = .fullScreen
-        self.present(quizSelectViewController, animated: true)
+        self.present(ViewControllerFactory.createQuizSelectViewController(), animated: true)
     }
     
     @IBAction func quizAddButton(_ sender: Any){

@@ -8,8 +8,10 @@
 import UIKit
 
 class QuizSelectViewController: UIViewController {
+    private let presenter: QuizSelectProtocol
     
-    init() {
+    init(presenter: QuizSelectProtocol) {
+        self.presenter = presenter
         super.init(nibName: String(describing: QuizSelectViewController
             .self), bundle: nil)
     }
@@ -52,6 +54,7 @@ class QuizSelectViewController: UIViewController {
 //
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 //        self.collectionView.delegate = self
 //        self.collectionView.dataSource = self
 //        collectionView.register(UINib(nibName: "QuizSelectViewController", bundle: nil), forCellWithReuseIdentifier: "cell")

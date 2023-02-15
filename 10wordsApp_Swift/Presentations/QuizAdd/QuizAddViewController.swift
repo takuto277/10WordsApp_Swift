@@ -16,10 +16,7 @@ class QuizAddViewController: UIViewController {
     
     
     @IBAction func registerButton(_ sender: Any) {
-        //TODO: Realmに登録
-        let homeViewController = HomeViewController()
-        homeViewController.modalPresentationStyle = .fullScreen
-        self.present(homeViewController, animated: true)
+        self.present(ViewControllerFactory.createHomeViewController(), animated: true)
     }
     
     override func viewDidLoad() {
