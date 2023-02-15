@@ -8,8 +8,16 @@
 import UIKit
 
 class QuizAddViewController: UIViewController {
-
+    private let presenter: QuizAddProtocol
     
+    init(presenter: QuizAddProtocol) {
+        self.presenter = presenter
+        super .init(nibName: String(describing: QuizAddPresenter.self), bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     @IBOutlet weak var englishTextField: UITextField!
     @IBOutlet weak var japaneseTextField: UITextField!

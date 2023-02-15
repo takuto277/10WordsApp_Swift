@@ -9,6 +9,17 @@ import UIKit
 
 class QuizShowViewController: UIViewController {
     
+    private let presenter: QuizShowProtocol
+    
+    init(presenter: QuizShowProtocol) {
+        self.presenter = presenter
+        super .init(nibName: String(describing: QuizShowViewController.self), bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     let wordsArray = [("apple", "リンゴ"),
                       ("banana", "バナナ"),
                       ("11", "リンゴ"),

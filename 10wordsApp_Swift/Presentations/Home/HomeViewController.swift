@@ -21,6 +21,7 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func planSwitchButton(_ sender: Any) {
+        print("hoge")
         self.presenter.planChange(planSwitch.isOn)
     }
     
@@ -29,9 +30,7 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func quizAddButton(_ sender: Any){
-        let quizAddViewController = QuizAddViewController()
-        quizAddViewController.modalPresentationStyle = .fullScreen
-        self.present(quizAddViewController, animated: true)
+        self.present(ViewControllerFactory.createQuizAddViewController(), animated: true)
     }
     
     @IBAction func quizDeleteButton(_ sender: Any){

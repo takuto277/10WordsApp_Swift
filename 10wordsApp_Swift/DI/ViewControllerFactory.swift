@@ -22,4 +22,18 @@ struct ViewControllerFactory {
         vc.modalPresentationStyle = .fullScreen
         return vc
     }
+    
+    static func createQuizShowViewController() -> UIViewController {
+        let presenter = QuizShowPresenter()
+        let vc = QuizShowViewController(presenter: presenter)
+        vc.modalPresentationStyle = .fullScreen
+        return vc
+    }
+    
+    static func createQuizAddViewController() -> UIViewController {
+        let presenter = QuizAddPresenter()
+        let vc = QuizAddViewController(presenter: presenter)
+        vc.modalPresentationStyle = .fullScreen
+        return vc
+    }
 }

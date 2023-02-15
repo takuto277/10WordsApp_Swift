@@ -8,9 +8,11 @@
 import Foundation
 
 class QuizSelectPresenter {
-    
+    private let plan = Plan()
 }
 
 extension QuizSelectPresenter: QuizSelectProtocol {
-    
+    func getPlan() {
+        plan.getPlan()
+    }
 }

@@ -12,7 +12,7 @@ enum QuizPlan {
     case userEditQuiz
 }
 
-
+//TODO: 命名の改善
 class Plan {
     
     static var quizPlan = QuizPlan.initialQuiz
