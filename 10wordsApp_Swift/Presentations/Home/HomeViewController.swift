@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+final class HomeViewController: UIViewController {
     private let presenter: HomeProtocol
     @IBOutlet weak var planSwitch: UISwitch!
     

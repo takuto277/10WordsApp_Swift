@@ -7,7 +7,7 @@
 
 import UIKit
 
-class QuizDeleteViewController: UIViewController {
+final class QuizDeleteViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

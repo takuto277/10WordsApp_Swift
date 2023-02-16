@@ -7,27 +7,19 @@
 
 import Foundation
 
-enum QuizPlan {
-    case initialQuiz
-    case userEditQuiz
-}
+//TODO: 継承しないファイルはfinalをつける
+//TODO: Repositoryを介して使う
 
 //TODO: 命名の改善
 class Plan {
     
-    static var quizPlan = QuizPlan.initialQuiz
+    static var quizPlan = QuizPlan.initial
     
     func change(_ planSwitch: Bool) {
-        Plan.quizPlan = planSwitch ? QuizPlan.initialQuiz : QuizPlan.userEditQuiz
+        Plan.quizPlan = planSwitch ? QuizPlan.initial : QuizPlan.userEdit
     }
     
-    func getPlan() {
-        switch Plan.quizPlan {
-        case .initialQuiz:
-            print("initialQuizのリストを取得")
-            
-        case .userEditQuiz:
-            print("userEditQuizのリストを取得")
-        }
+    func get() -> QuizPlan {
+        return Plan.quizPlan
     }
 }

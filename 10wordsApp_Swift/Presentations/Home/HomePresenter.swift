@@ -6,14 +6,17 @@
 //
 
 import Foundation
-private let plan = Plan()
 
-class HomePresenter {
+final class HomePresenter {
+    private let planRepository: PlanRepositoryProtocol
     
+    init(planRepository: PlanRepositoryProtocol) {
+        self.planRepository = planRepository
+    }
 }
 
 extension HomePresenter: HomeProtocol {
     func planChange(_ planSwich: Bool) {
-        plan.change(planSwich)
+        self.planRepository.changePlan(planSwich)
     }
 }

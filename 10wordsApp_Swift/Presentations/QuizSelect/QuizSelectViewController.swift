@@ -7,7 +7,7 @@
 
 import UIKit
 
-class QuizSelectViewController: UIViewController {
+final class QuizSelectViewController: UIViewController {
     private let presenter: QuizSelectProtocol
     
     init(presenter: QuizSelectProtocol) {

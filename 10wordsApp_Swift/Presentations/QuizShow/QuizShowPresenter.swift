@@ -7,7 +7,7 @@
 
 import Foundation
 
-class QuizShowPresenter {
+final class QuizShowPresenter {
     
 }
 
