@@ -8,5 +8,9 @@
 import Foundation
 
 protocol HomeProtocol: AnyObject {
+    func attachView(view: HomeViewProtocol)
     func planChange(_ planSwich: Bool)
+}
+
+protocol HomeViewProtocol: AnyObject {
 }

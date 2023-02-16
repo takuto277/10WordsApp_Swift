@@ -7,6 +7,11 @@
 
 import Foundation
 
-protocol QuizSelectProtocol {
+protocol QuizSelectProtocol: AnyObject {
+    func attachView(_ view: QuizSelectViewProtocol)
     func getPlan()
+}
+
+protocol QuizSelectViewProtocol: AnyObject {
+    func didGetPlan(_ plan: QuizPlan)
 }

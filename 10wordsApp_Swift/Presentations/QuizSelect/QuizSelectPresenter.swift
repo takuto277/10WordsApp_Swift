@@ -8,6 +8,7 @@
 import Foundation
 
 final class QuizSelectPresenter {
+    private weak var view: QuizSelectViewProtocol?
     private let planRepository: PlanRepositoryProtocol
     
     init(planRepository: PlanRepositoryProtocol) {
@@ -16,7 +17,11 @@ final class QuizSelectPresenter {
 }
 
 extension QuizSelectPresenter: QuizSelectProtocol {
+    func attachView(_ view: QuizSelectViewProtocol) {
+        self.view = view
+    }
     func getPlan() {
         let plan = self.planRepository.getPlan()
+        self.view?.didGetPlan(plan)
     }
 }

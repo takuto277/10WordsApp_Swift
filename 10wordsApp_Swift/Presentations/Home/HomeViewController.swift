@@ -47,5 +47,9 @@ final class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.presenter.attachView(view: self)
     }
+}
+
+extension HomeViewController: HomeViewProtocol {
 }

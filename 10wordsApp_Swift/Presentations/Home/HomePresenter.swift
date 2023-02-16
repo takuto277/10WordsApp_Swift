@@ -8,6 +8,7 @@
 import Foundation
 
 final class HomePresenter {
+    private weak var view: HomeViewProtocol?
     private let planRepository: PlanRepositoryProtocol
     
     init(planRepository: PlanRepositoryProtocol) {
@@ -16,6 +17,11 @@ final class HomePresenter {
 }
 
 extension HomePresenter: HomeProtocol {
+    
+    func attachView(view: HomeViewProtocol) {
+        self.view = view
+    }
+    
     func planChange(_ planSwich: Bool) {
         self.planRepository.changePlan(planSwich)
     }

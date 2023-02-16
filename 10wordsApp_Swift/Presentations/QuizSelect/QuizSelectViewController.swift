@@ -26,6 +26,13 @@ final class QuizSelectViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.presenter.attachView(self)
         self.presenter.getPlan()
+    }
+}
+
+extension QuizSelectViewController: QuizSelectViewProtocol {
+    func didGetPlan(_ plan: QuizPlan) {
+        
     }
 }
