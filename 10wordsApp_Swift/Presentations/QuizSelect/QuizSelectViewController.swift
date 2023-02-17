@@ -32,7 +32,7 @@ final class QuizSelectViewController: UIViewController {
 }
 
 extension QuizSelectViewController: QuizSelectViewProtocol {
-    func didGetPlan(_ plan: QuizPlan) {
+    func didGetPlan(_ isInitial: Bool) {
         
     }
 }

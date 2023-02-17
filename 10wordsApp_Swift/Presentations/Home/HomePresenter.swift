@@ -22,7 +22,7 @@ extension HomePresenter: HomeProtocol {
         self.view = view
     }
     
-    func planChange(_ planSwich: Bool) {
-        self.planRepository.changePlan(planSwich)
+    func planChange(_ isInitial: Bool) {
+        self.planRepository.initial(isInitial)
     }
 }

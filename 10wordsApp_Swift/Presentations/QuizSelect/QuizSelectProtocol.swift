@@ -13,5 +13,5 @@ protocol QuizSelectProtocol: AnyObject {
 }
 
 protocol QuizSelectViewProtocol: AnyObject {
-    func didGetPlan(_ plan: QuizPlan)
+    func didGetPlan(_ isInitial: Bool)
 }

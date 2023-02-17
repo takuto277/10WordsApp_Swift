@@ -8,6 +8,6 @@
 import Foundation
 
 protocol PlanRepositoryProtocol {
-    func changePlan(_ planSwitch: Bool)
-    func getPlan() -> QuizPlan
+    func initial(_ isInitial: Bool)
+    func isInitial() -> Bool
 }

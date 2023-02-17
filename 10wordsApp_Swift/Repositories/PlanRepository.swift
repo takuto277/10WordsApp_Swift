@@ -8,15 +8,15 @@
 import Foundation
 
 class PlanRepository {
-    private let plan = Plan()
+    private let planSource = PlanSource()
 }
 
 extension PlanRepository: PlanRepositoryProtocol {
-    func changePlan(_ planSwitch: Bool) {
-        self.plan.change(planSwitch)
+    func initial(_ isInitial: Bool) {
+        self.planSource.setValue(isInitial ? .initial : .userEdit)
     }
     
-    func getPlan() -> QuizPlan {
-        return self.plan.get()
+    func isInitial() -> Bool {
+        return self.planSource.value() == .initial
     }
 }

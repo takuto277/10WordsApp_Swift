@@ -21,7 +21,7 @@ extension QuizSelectPresenter: QuizSelectProtocol {
         self.view = view
     }
     func getPlan() {
-        let plan = self.planRepository.getPlan()
-        self.view?.didGetPlan(plan)
+        let isInitial = self.planRepository.isInitial()
+        self.view?.didGetPlan(isInitial)
     }
 }
