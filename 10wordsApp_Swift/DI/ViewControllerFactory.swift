@@ -20,7 +20,8 @@ struct ViewControllerFactory {
     
     static func createQuizSelectViewController() -> UIViewController {
         let presenter = QuizSelectPresenter(
-            planRepository: SingletonContainer.shard.repositoryModeles.planRepository
+            planRepository: SingletonContainer.shard.repositoryModeles.planRepository,
+            quizWordsRepository: SingletonContainer.shard.repositoryModeles.quizWordsRepository
         )
         let vc = QuizSelectViewController(presenter: presenter)
         vc.modalPresentationStyle = .fullScreen

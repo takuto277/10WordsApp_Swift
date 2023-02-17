@@ -20,7 +20,7 @@ extension PlanRepository: PlanRepositoryProtocol {
         self.planSource.setValue(isInitial ? .initial : .userEdit)
     }
     
-    func isInitial() -> Bool {
-        return self.planSource.value() == .initial
+    func fetch() -> QuizPlan {
+        return self.planSource.value()
     }
 }

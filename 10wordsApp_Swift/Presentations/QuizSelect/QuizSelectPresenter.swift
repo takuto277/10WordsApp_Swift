@@ -10,9 +10,12 @@ import Foundation
 final class QuizSelectPresenter {
     private weak var view: QuizSelectViewProtocol?
     private let planRepository: PlanRepositoryProtocol
+    private let quizWordsRepository: QuizWordsRepositoryProtocol
     
-    init(planRepository: PlanRepositoryProtocol) {
+    init(planRepository: PlanRepositoryProtocol,
+         quizWordsRepository: QuizWordsRepositoryProtocol) {
         self.planRepository = planRepository
+        self.quizWordsRepository = quizWordsRepository
     }
 }
 
@@ -20,8 +23,14 @@ extension QuizSelectPresenter: QuizSelectProtocol {
     func attachView(_ view: QuizSelectViewProtocol) {
         self.view = view
     }
-    func getPlan() {
-        let isInitial = self.planRepository.isInitial()
-        self.view?.didGetPlan(isInitial)
+    
+    func fetchPlan() {
+        let plan = self.planRepository.fetch()
+        self.view?.didFetchPlan(plan)
     }
+    
+    func fetchQuizWords(_ quizPlan: QuizPlan) {
+        let quizWords = self.quizWordsRepository.findByPlan(quizPlan)
+    }
+    
 }

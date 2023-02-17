@@ -19,8 +19,12 @@ final class QuizWordsRepository {
 }
 
 extension QuizWordsRepository: QuizWordsRepositoryProtocol {
-    func findByIndexWithPlan() -> [String] {
-        
-        return [""]
+    func findByPlan(_ quizPlan: QuizPlan) -> [QuizWordEntity] {
+        switch quizPlan {
+        case .initial:
+            return self.initialQuizWords.fetchValues()
+        case .userEdit:
+            return self.userEditQuizWords.fetchValues()
+        }
     }
 }

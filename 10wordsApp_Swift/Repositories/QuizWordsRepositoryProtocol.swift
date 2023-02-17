@@ -8,5 +8,5 @@
 import Foundation
 
 protocol QuizWordsRepositoryProtocol {
-    func findByIndexWithPlan() -> [String]
+    func findByPlan(_ quizPlan: QuizPlan) -> [QuizWordEntity]
 }

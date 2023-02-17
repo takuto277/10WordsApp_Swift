@@ -9,5 +9,5 @@ import Foundation
 import RealmSwift
 
 protocol InitialQuizWordsProtocol {
-    func fetchValues() -> List<String>
+    func fetchValues() -> [QuizWordEntity]
 }

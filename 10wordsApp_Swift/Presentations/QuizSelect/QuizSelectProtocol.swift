@@ -9,9 +9,10 @@ import Foundation
 
 protocol QuizSelectProtocol: AnyObject {
     func attachView(_ view: QuizSelectViewProtocol)
-    func getPlan()
+    func fetchPlan()
+    func fetchQuizWords(_ quizPlan: QuizPlan)
 }
 
 protocol QuizSelectViewProtocol: AnyObject {
-    func didGetPlan(_ isInitial: Bool)
+    func didFetchPlan(_ quizPlan: QuizPlan)
 }

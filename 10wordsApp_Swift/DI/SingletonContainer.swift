@@ -9,11 +9,14 @@ import Foundation
 
 final class SingletonContainer {
     let planSourceModules: PlanSourceModules
+    let daoModules: DaoModules
     let repositoryModeles: RepositoryModules
     
     init() {
         self.planSourceModules = PlanSourceModules.inject()
-        self.repositoryModeles = RepositoryModules.inject(self.planSourceModules)
+        self.daoModules = DaoModules.inject()
+        self.repositoryModeles = RepositoryModules.inject(self.planSourceModules,
+                                                          self.daoModules)
     }
     
     static let shard = SingletonContainer()

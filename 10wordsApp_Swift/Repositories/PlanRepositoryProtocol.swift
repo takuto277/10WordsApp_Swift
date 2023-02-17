@@ -9,5 +9,5 @@ import Foundation
 
 protocol PlanRepositoryProtocol {
     func initial(_ isInitial: Bool)
-    func isInitial() -> Bool
+    func fetch() -> QuizPlan
 }

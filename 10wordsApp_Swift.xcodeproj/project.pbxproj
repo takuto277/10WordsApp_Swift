@@ -45,6 +45,7 @@
 		9936AC69299F68BC00F8C258 /* QuizWordsRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9936AC68299F68BC00F8C258 /* QuizWordsRepositoryProtocol.swift */; };
 		9936AC6B299F69D900F8C258 /* UserEditQuizWordsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9936AC6A299F69D900F8C258 /* UserEditQuizWordsProtocol.swift */; };
 		9936AC6D299F69EC00F8C258 /* InitialQuizWordsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9936AC6C299F69EC00F8C258 /* InitialQuizWordsProtocol.swift */; };
+		9936AC70299F787B00F8C258 /* DaoModules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9936AC6F299F787B00F8C258 /* DaoModules.swift */; };
 		99E459C6299A720200E649C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E459C5299A720200E649C1 /* AppDelegate.swift */; };
 		99E459C8299A720200E649C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E459C7299A720200E649C1 /* SceneDelegate.swift */; };
 		99E459CF299A720400E649C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99E459CE299A720400E649C1 /* Assets.xcassets */; };
@@ -88,6 +89,7 @@
 		9936AC68299F68BC00F8C258 /* QuizWordsRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizWordsRepositoryProtocol.swift; sourceTree = "<group>"; };
 		9936AC6A299F69D900F8C258 /* UserEditQuizWordsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEditQuizWordsProtocol.swift; sourceTree = "<group>"; };
 		9936AC6C299F69EC00F8C258 /* InitialQuizWordsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialQuizWordsProtocol.swift; sourceTree = "<group>"; };
+		9936AC6F299F787B00F8C258 /* DaoModules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaoModules.swift; sourceTree = "<group>"; };
 		99E459C2299A720200E649C1 /* 10wordsApp_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 10wordsApp_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99E459C5299A720200E649C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99E459C7299A720200E649C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -194,6 +196,17 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		9936AC6E299F702800F8C258 /* Dao */ = {
+			isa = PBXGroup;
+			children = (
+				9936AC54299E928300F8C258 /* UserEditQuizWords.swift */,
+				9936AC6A299F69D900F8C258 /* UserEditQuizWordsProtocol.swift */,
+				9936AC56299E929800F8C258 /* InitialQuizWords.swift */,
+				9936AC6C299F69EC00F8C258 /* InitialQuizWordsProtocol.swift */,
+			);
+			path = Dao;
+			sourceTree = "<group>";
+		};
 		99E459B9299A720200E649C1 = {
 			isa = PBXGroup;
 			children = (
@@ -237,6 +250,7 @@
 				9936AC3E299D010500F8C258 /* ViewControllerFactory.swift */,
 				9936AC5A299F5B0800F8C258 /* SingletonContainer.swift */,
 				9936AC5C299F5CDC00F8C258 /* PlanSourceModules.swift */,
+				9936AC6F299F787B00F8C258 /* DaoModules.swift */,
 				9936AC5E299F5E4B00F8C258 /* RepositoryModules.swift */,
 			);
 			path = DI;
@@ -263,12 +277,9 @@
 		99E459DC299A951800E649C1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				9936AC6E299F702800F8C258 /* Dao */,
 				9936AC38299CE9AD00F8C258 /* PlanSource.swift */,
 				9936AC58299F584B00F8C258 /* PlanSourceProtocol.swift */,
-				9936AC54299E928300F8C258 /* UserEditQuizWords.swift */,
-				9936AC6A299F69D900F8C258 /* UserEditQuizWordsProtocol.swift */,
-				9936AC56299E929800F8C258 /* InitialQuizWords.swift */,
-				9936AC6C299F69EC00F8C258 /* InitialQuizWordsProtocol.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -406,6 +417,7 @@
 				9936AC47299D09A100F8C258 /* QuizShowProtocol.swift in Sources */,
 				9936AC53299E89E900F8C258 /* QuizWordEntity.swift in Sources */,
 				9936AC23299BD6C000F8C258 /* QuizShowViewController.swift in Sources */,
+				9936AC70299F787B00F8C258 /* DaoModules.swift in Sources */,
 				9936AC69299F68BC00F8C258 /* QuizWordsRepositoryProtocol.swift in Sources */,
 				9936AC32299BDB5300F8C258 /* QuizAddViewController.swift in Sources */,
 			);
