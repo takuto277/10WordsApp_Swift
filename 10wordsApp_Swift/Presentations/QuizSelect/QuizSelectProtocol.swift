@@ -15,4 +15,5 @@ protocol QuizSelectProtocol: AnyObject {
 
 protocol QuizSelectViewProtocol: AnyObject {
     func didFetchPlan(_ quizPlan: QuizPlan)
+    func didFetchQuizWords(_ quizWords: [QuizWordEntity])
 }

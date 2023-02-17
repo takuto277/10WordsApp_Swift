@@ -10,6 +10,8 @@ import UIKit
 final class QuizSelectViewController: UIViewController {
     private let presenter: QuizSelectProtocol
     
+    @IBOutlet weak var testLabel: UILabel!
+    
     init(presenter: QuizSelectProtocol) {
         self.presenter = presenter
         super.init(nibName: String(describing: QuizSelectViewController
@@ -35,5 +37,9 @@ extension QuizSelectViewController: QuizSelectViewProtocol {
     func didFetchPlan(_ quizPlan: QuizPlan) {
         self.presenter.fetchQuizWords(quizPlan)
         
+    }
+    
+    func didFetchQuizWords(_ quizWords: [QuizWordEntity]) {
+        self.testLabel.text = quizWords[0].english
     }
 }

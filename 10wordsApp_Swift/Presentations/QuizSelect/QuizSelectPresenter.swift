@@ -31,6 +31,7 @@ extension QuizSelectPresenter: QuizSelectProtocol {
     
     func fetchQuizWords(_ quizPlan: QuizPlan) {
         let quizWords = self.quizWordsRepository.findByPlan(quizPlan)
+        self.view?.didFetchQuizWords(quizWords)
     }
     
 }
