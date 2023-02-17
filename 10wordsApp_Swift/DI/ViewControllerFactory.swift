@@ -10,14 +10,18 @@ import UIKit
 
 struct ViewControllerFactory {
     static func createHomeViewController() -> UIViewController {
-        let presenter = HomePresenter(planRepository: PlanRepository())
+        let presenter = HomePresenter(
+            planRepository: SingletonContainer.shard.repositoryModeles.planRepository
+        )
         let vc = HomeViewController(presenter: presenter)
         vc.modalPresentationStyle = .fullScreen
         return vc
     }
     
     static func createQuizSelectViewController() -> UIViewController {
-        let presenter = QuizSelectPresenter(planRepository: PlanRepository())
+        let presenter = QuizSelectPresenter(
+            planRepository: SingletonContainer.shard.repositoryModeles.planRepository
+        )
         let vc = QuizSelectViewController(presenter: presenter)
         vc.modalPresentationStyle = .fullScreen
         return vc

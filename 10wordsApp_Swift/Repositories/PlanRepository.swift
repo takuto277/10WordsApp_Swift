@@ -8,7 +8,11 @@
 import Foundation
 
 class PlanRepository {
-    private let planSource = PlanSource()
+    private let planSource: PlanSourceProtocol
+    
+    init(planSource: PlanSourceProtocol) {
+        self.planSource = planSource
+    }
 }
 
 extension PlanRepository: PlanRepositoryProtocol {

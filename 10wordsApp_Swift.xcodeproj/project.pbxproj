@@ -36,6 +36,9 @@
 		9936AC55299E928300F8C258 /* UserEditQuizWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9936AC54299E928300F8C258 /* UserEditQuizWords.swift */; };
 		9936AC57299E929800F8C258 /* InitialQuizWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9936AC56299E929800F8C258 /* InitialQuizWords.swift */; };
 		9936AC59299F584B00F8C258 /* PlanSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9936AC58299F584B00F8C258 /* PlanSourceProtocol.swift */; };
+		9936AC5B299F5B0800F8C258 /* SingletonContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9936AC5A299F5B0800F8C258 /* SingletonContainer.swift */; };
+		9936AC5D299F5CDC00F8C258 /* PlanSourceModules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9936AC5C299F5CDC00F8C258 /* PlanSourceModules.swift */; };
+		9936AC5F299F5E4B00F8C258 /* RepositoryModules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9936AC5E299F5E4B00F8C258 /* RepositoryModules.swift */; };
 		99E459C6299A720200E649C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E459C5299A720200E649C1 /* AppDelegate.swift */; };
 		99E459C8299A720200E649C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E459C7299A720200E649C1 /* SceneDelegate.swift */; };
 		99E459CF299A720400E649C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99E459CE299A720400E649C1 /* Assets.xcassets */; };
@@ -72,6 +75,9 @@
 		9936AC54299E928300F8C258 /* UserEditQuizWords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEditQuizWords.swift; sourceTree = "<group>"; };
 		9936AC56299E929800F8C258 /* InitialQuizWords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialQuizWords.swift; sourceTree = "<group>"; };
 		9936AC58299F584B00F8C258 /* PlanSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanSourceProtocol.swift; sourceTree = "<group>"; };
+		9936AC5A299F5B0800F8C258 /* SingletonContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonContainer.swift; sourceTree = "<group>"; };
+		9936AC5C299F5CDC00F8C258 /* PlanSourceModules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanSourceModules.swift; sourceTree = "<group>"; };
+		9936AC5E299F5E4B00F8C258 /* RepositoryModules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryModules.swift; sourceTree = "<group>"; };
 		99E459C2299A720200E649C1 /* 10wordsApp_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 10wordsApp_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99E459C5299A720200E649C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99E459C7299A720200E649C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -209,6 +215,9 @@
 			isa = PBXGroup;
 			children = (
 				9936AC3E299D010500F8C258 /* ViewControllerFactory.swift */,
+				9936AC5A299F5B0800F8C258 /* SingletonContainer.swift */,
+				9936AC5C299F5CDC00F8C258 /* PlanSourceModules.swift */,
+				9936AC5E299F5E4B00F8C258 /* RepositoryModules.swift */,
 			);
 			path = DI;
 			sourceTree = "<group>";
@@ -347,16 +356,19 @@
 				9936AC50299E74B000F8C258 /* PlanRepositoryProtocol.swift in Sources */,
 				9936AC39299CE9AD00F8C258 /* PlanSource.swift in Sources */,
 				9936AC55299E928300F8C258 /* UserEditQuizWords.swift in Sources */,
+				9936AC5F299F5E4B00F8C258 /* RepositoryModules.swift in Sources */,
 				9936AC41299D07E800F8C258 /* QuizAddPresenter.swift in Sources */,
 				9936AC37299CE13300F8C258 /* HomeProtocol.swift in Sources */,
 				9936AC4D299E747A00F8C258 /* PlanRepository.swift in Sources */,
 				9936AC3D299CFF1A00F8C258 /* QuizSelectProtocol.swift in Sources */,
 				99E459C8299A720200E649C1 /* SceneDelegate.swift in Sources */,
+				9936AC5D299F5CDC00F8C258 /* PlanSourceModules.swift in Sources */,
 				9936AC29299BD99800F8C258 /* QuizDeleteViewController.swift in Sources */,
 				9936AC45299D098F00F8C258 /* QuizShowPresenter.swift in Sources */,
 				9936AC35299CE0E600F8C258 /* HomePresenter.swift in Sources */,
 				9936AC3B299CFF0600F8C258 /* QuizSelectPresenter.swift in Sources */,
 				9936AC57299E929800F8C258 /* InitialQuizWords.swift in Sources */,
+				9936AC5B299F5B0800F8C258 /* SingletonContainer.swift in Sources */,
 				9936AC47299D09A100F8C258 /* QuizShowProtocol.swift in Sources */,
 				9936AC53299E89E900F8C258 /* QuizWordEntity.swift in Sources */,
 				9936AC23299BD6C000F8C258 /* QuizShowViewController.swift in Sources */,

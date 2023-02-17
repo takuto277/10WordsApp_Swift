@@ -8,5 +8,4 @@
 import Foundation
 
 class UserEditQuizWords {
-    //TODO: Arrayを取得する
 }
