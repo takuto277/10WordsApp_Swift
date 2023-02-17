@@ -7,7 +7,7 @@
 
 import Foundation
 
-class PlanRepository {
+final class PlanRepository {
     private let planSource: PlanSourceProtocol
     
     init(planSource: PlanSourceProtocol) {
