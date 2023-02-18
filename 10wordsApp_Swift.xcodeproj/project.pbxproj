@@ -47,6 +47,9 @@
 		9936AC6D299F69EC00F8C258 /* InitialQuizWordsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9936AC6C299F69EC00F8C258 /* InitialQuizWordsProtocol.swift */; };
 		9936AC70299F787B00F8C258 /* DaoModules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9936AC6F299F787B00F8C258 /* DaoModules.swift */; };
 		9936AC7329A1130400F8C258 /* UserEditQuizWordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9936AC7229A1130400F8C258 /* UserEditQuizWordModel.swift */; };
+		9936AC7529A126BD00F8C258 /* ObjectConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9936AC7429A126BD00F8C258 /* ObjectConverter.swift */; };
+		9936AC7729A12A7E00F8C258 /* UserEditQuizWordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9936AC7629A12A7E00F8C258 /* UserEditQuizWordModel.swift */; };
+		9936AC7A29A130B800F8C258 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9936AC7929A130B800F8C258 /* RealmManager.swift */; };
 		99E459C6299A720200E649C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E459C5299A720200E649C1 /* AppDelegate.swift */; };
 		99E459C8299A720200E649C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E459C7299A720200E649C1 /* SceneDelegate.swift */; };
 		99E459CF299A720400E649C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99E459CE299A720400E649C1 /* Assets.xcassets */; };
@@ -92,6 +95,9 @@
 		9936AC6C299F69EC00F8C258 /* InitialQuizWordsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialQuizWordsProtocol.swift; sourceTree = "<group>"; };
 		9936AC6F299F787B00F8C258 /* DaoModules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaoModules.swift; sourceTree = "<group>"; };
 		9936AC7229A1130400F8C258 /* UserEditQuizWordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEditQuizWordModel.swift; sourceTree = "<group>"; };
+		9936AC7429A126BD00F8C258 /* ObjectConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectConverter.swift; sourceTree = "<group>"; };
+		9936AC7629A12A7E00F8C258 /* UserEditQuizWordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEditQuizWordModel.swift; sourceTree = "<group>"; };
+		9936AC7929A130B800F8C258 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		99E459C2299A720200E649C1 /* 10wordsApp_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 10wordsApp_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99E459C5299A720200E649C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99E459C7299A720200E649C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -195,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				9936AC7129A112B400F8C258 /* RealmObject */,
+				9936AC7429A126BD00F8C258 /* ObjectConverter.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -218,6 +225,14 @@
 			path = RealmObject;
 			sourceTree = "<group>";
 		};
+		9936AC7829A1309A00F8C258 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				9936AC7929A130B800F8C258 /* RealmManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		99E459B9299A720200E649C1 = {
 			isa = PBXGroup;
 			children = (
@@ -237,6 +252,7 @@
 		99E459C4299A720200E649C1 /* 10wordsApp_Swift */ = {
 			isa = PBXGroup;
 			children = (
+				9936AC7829A1309A00F8C258 /* Managers */,
 				9936AC60299F62EB00F8C258 /* Model */,
 				9936AC51299E891A00F8C258 /* Entity */,
 				9936AC48299E707200F8C258 /* Enum */,
@@ -298,6 +314,7 @@
 		99E459DD299A952200E649C1 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				9936AC7629A12A7E00F8C258 /* UserEditQuizWordModel.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -402,11 +419,13 @@
 				9936AC2D299BD9AD00F8C258 /* QuizListViewController.swift in Sources */,
 				9936AC3F299D010500F8C258 /* ViewControllerFactory.swift in Sources */,
 				99E459C6299A720200E649C1 /* AppDelegate.swift in Sources */,
+				9936AC7A29A130B800F8C258 /* RealmManager.swift in Sources */,
 				9936AC1E299AA18900F8C258 /* QuizSelectViewController.swift in Sources */,
 				9936AC43299D07F800F8C258 /* QuizAddProtocol.swift in Sources */,
 				9936AC4A299E708700F8C258 /* QuizPlan.swift in Sources */,
 				9936AC19299A975A00F8C258 /* HomeViewController.swift in Sources */,
 				9936AC50299E74B000F8C258 /* PlanRepositoryProtocol.swift in Sources */,
+				9936AC7729A12A7E00F8C258 /* UserEditQuizWordModel.swift in Sources */,
 				9936AC39299CE9AD00F8C258 /* PlanSource.swift in Sources */,
 				9936AC55299E928300F8C258 /* UserEditQuizWords.swift in Sources */,
 				9936AC5F299F5E4B00F8C258 /* RepositoryModules.swift in Sources */,
@@ -416,6 +435,7 @@
 				9936AC37299CE13300F8C258 /* HomeProtocol.swift in Sources */,
 				9936AC4D299E747A00F8C258 /* PlanRepository.swift in Sources */,
 				9936AC3D299CFF1A00F8C258 /* QuizSelectProtocol.swift in Sources */,
+				9936AC7529A126BD00F8C258 /* ObjectConverter.swift in Sources */,
 				99E459C8299A720200E649C1 /* SceneDelegate.swift in Sources */,
 				9936AC5D299F5CDC00F8C258 /* PlanSourceModules.swift in Sources */,
 				9936AC29299BD99800F8C258 /* QuizDeleteViewController.swift in Sources */,

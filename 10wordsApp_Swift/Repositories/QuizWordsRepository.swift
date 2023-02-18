@@ -19,6 +19,14 @@ final class QuizWordsRepository {
 }
 
 extension QuizWordsRepository: QuizWordsRepositoryProtocol {
+    
+    func setUserEditQuizWord(quizWordEntity: QuizWordEntity) {
+        let model = UserEditQuizWordModel.incrementId(
+            ObjectConverter.convertUserEditQuizWordModel(quizWordEntity)
+        )
+        self.userEditQuizWords.setValue(model)
+    }
+    
     func findByPlan(_ quizPlan: QuizPlan) -> [QuizWordEntity] {
         switch quizPlan {
         case .initial:

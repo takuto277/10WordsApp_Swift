@@ -24,6 +24,11 @@ final class QuizAddViewController: UIViewController {
     
     
     @IBAction func registerButton(_ sender: Any) {
+        let quizWordEntity = QuizWordEntity(
+            english: englishTextField.text ?? "",
+            japanese: japaneseTextField.text ?? ""
+        )
+        self.presenter
         
         self.present(ViewControllerFactory.createHomeViewController(), animated: true)
     }
