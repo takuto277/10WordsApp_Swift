@@ -11,7 +11,6 @@ import RealmSwift
 extension UserEditQuizWordModel {
     static func incrementId(_ model: UserEditQuizWordModel) -> UserEditQuizWordModel {
         let realm = RealmManager.shared.realm
-        print(Realm.Configuration.defaultConfiguration.fileURL!)
         model.id = (realm.objects(UserEditQuizWordModel.self).max(ofProperty: "id") as Int? ?? 0) + 1
         return model
     }
