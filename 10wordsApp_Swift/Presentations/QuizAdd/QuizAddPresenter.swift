@@ -17,6 +17,6 @@ final class QuizAddPresenter {
 
 extension QuizAddPresenter: QuizAddProtocol {
     func saveQuizWord(_ quizWordEntity: QuizWordEntity) {
-        self.quizWordsRepository.
+        self.quizWordsRepository.setUserEditQuizWord(quizWordEntity)
     }
 }

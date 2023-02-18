@@ -8,5 +8,6 @@
 import Foundation
 
 protocol QuizWordsRepositoryProtocol {
+    func setUserEditQuizWord(_ quizWordEntity: QuizWordEntity)
     func findByPlan(_ quizPlan: QuizPlan) -> [QuizWordEntity]
 }

@@ -11,7 +11,7 @@ import RealmSwift
 class UserEditQuizWords: UserEditQuizWordsProtocol {
     
     func setValue(_ model: UserEditQuizWordModel) {
-        let realm = try! Realm()
+        let realm = RealmManager.shared.realm
         do {
             try realm.write {
                 realm.add(model)

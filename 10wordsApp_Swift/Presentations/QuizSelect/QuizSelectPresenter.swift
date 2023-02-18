@@ -33,5 +33,4 @@ extension QuizSelectPresenter: QuizSelectProtocol {
         let quizWords = self.quizWordsRepository.findByPlan(quizPlan)
         self.view?.didFetchQuizWords(quizWords)
     }
-    
 }

@@ -20,7 +20,7 @@ final class QuizWordsRepository {
 
 extension QuizWordsRepository: QuizWordsRepositoryProtocol {
     
-    func setUserEditQuizWord(quizWordEntity: QuizWordEntity) {
+    func setUserEditQuizWord(_ quizWordEntity: QuizWordEntity) {
         let model = UserEditQuizWordModel.incrementId(
             ObjectConverter.convertUserEditQuizWordModel(quizWordEntity)
         )
