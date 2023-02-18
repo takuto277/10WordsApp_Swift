@@ -8,5 +8,5 @@
 import Foundation
 
 protocol QuizAddProtocol {
-    
+    func saveQuizWord(_ quizWordEntity: QuizWordEntity)
 }

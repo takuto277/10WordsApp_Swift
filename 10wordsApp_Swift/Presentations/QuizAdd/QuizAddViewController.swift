@@ -12,7 +12,7 @@ final class QuizAddViewController: UIViewController {
     
     init(presenter: QuizAddProtocol) {
         self.presenter = presenter
-        super .init(nibName: String(describing: QuizAddPresenter.self), bundle: nil)
+        super .init(nibName: String(describing: QuizAddViewController.self), bundle: nil)
     }
     
     required init?(coder: NSCoder) {
@@ -28,7 +28,7 @@ final class QuizAddViewController: UIViewController {
             english: englishTextField.text ?? "",
             japanese: japaneseTextField.text ?? ""
         )
-        self.presenter
+        self.presenter.saveQuizWord(quizWordEntity)
         
         self.present(ViewControllerFactory.createHomeViewController(), animated: true)
     }

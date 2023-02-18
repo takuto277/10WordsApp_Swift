@@ -48,7 +48,7 @@
 		9936AC70299F787B00F8C258 /* DaoModules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9936AC6F299F787B00F8C258 /* DaoModules.swift */; };
 		9936AC7329A1130400F8C258 /* UserEditQuizWordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9936AC7229A1130400F8C258 /* UserEditQuizWordModel.swift */; };
 		9936AC7529A126BD00F8C258 /* ObjectConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9936AC7429A126BD00F8C258 /* ObjectConverter.swift */; };
-		9936AC7729A12A7E00F8C258 /* UserEditQuizWordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9936AC7629A12A7E00F8C258 /* UserEditQuizWordModel.swift */; };
+		9936AC7729A12A7E00F8C258 /* UserEditQuizWordModel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9936AC7629A12A7E00F8C258 /* UserEditQuizWordModel+Extension.swift */; };
 		9936AC7A29A130B800F8C258 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9936AC7929A130B800F8C258 /* RealmManager.swift */; };
 		99E459C6299A720200E649C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E459C5299A720200E649C1 /* AppDelegate.swift */; };
 		99E459C8299A720200E649C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E459C7299A720200E649C1 /* SceneDelegate.swift */; };
@@ -96,7 +96,7 @@
 		9936AC6F299F787B00F8C258 /* DaoModules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaoModules.swift; sourceTree = "<group>"; };
 		9936AC7229A1130400F8C258 /* UserEditQuizWordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEditQuizWordModel.swift; sourceTree = "<group>"; };
 		9936AC7429A126BD00F8C258 /* ObjectConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectConverter.swift; sourceTree = "<group>"; };
-		9936AC7629A12A7E00F8C258 /* UserEditQuizWordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEditQuizWordModel.swift; sourceTree = "<group>"; };
+		9936AC7629A12A7E00F8C258 /* UserEditQuizWordModel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserEditQuizWordModel+Extension.swift"; sourceTree = "<group>"; };
 		9936AC7929A130B800F8C258 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		99E459C2299A720200E649C1 /* 10wordsApp_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 10wordsApp_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99E459C5299A720200E649C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -314,7 +314,7 @@
 		99E459DD299A952200E649C1 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				9936AC7629A12A7E00F8C258 /* UserEditQuizWordModel.swift */,
+				9936AC7629A12A7E00F8C258 /* UserEditQuizWordModel+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -425,7 +425,7 @@
 				9936AC4A299E708700F8C258 /* QuizPlan.swift in Sources */,
 				9936AC19299A975A00F8C258 /* HomeViewController.swift in Sources */,
 				9936AC50299E74B000F8C258 /* PlanRepositoryProtocol.swift in Sources */,
-				9936AC7729A12A7E00F8C258 /* UserEditQuizWordModel.swift in Sources */,
+				9936AC7729A12A7E00F8C258 /* UserEditQuizWordModel+Extension.swift in Sources */,
 				9936AC39299CE9AD00F8C258 /* PlanSource.swift in Sources */,
 				9936AC55299E928300F8C258 /* UserEditQuizWords.swift in Sources */,
 				9936AC5F299F5E4B00F8C258 /* RepositoryModules.swift in Sources */,
