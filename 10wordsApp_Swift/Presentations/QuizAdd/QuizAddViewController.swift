@@ -24,6 +24,7 @@ final class QuizAddViewController: UIViewController {
     
     
     @IBAction func registerButton(_ sender: Any) {
+        
         self.present(ViewControllerFactory.createHomeViewController(), animated: true)
     }
     

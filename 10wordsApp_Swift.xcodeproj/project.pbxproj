@@ -46,6 +46,7 @@
 		9936AC6B299F69D900F8C258 /* UserEditQuizWordsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9936AC6A299F69D900F8C258 /* UserEditQuizWordsProtocol.swift */; };
 		9936AC6D299F69EC00F8C258 /* InitialQuizWordsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9936AC6C299F69EC00F8C258 /* InitialQuizWordsProtocol.swift */; };
 		9936AC70299F787B00F8C258 /* DaoModules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9936AC6F299F787B00F8C258 /* DaoModules.swift */; };
+		9936AC7329A1130400F8C258 /* UserEditQuizWordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9936AC7229A1130400F8C258 /* UserEditQuizWordModel.swift */; };
 		99E459C6299A720200E649C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E459C5299A720200E649C1 /* AppDelegate.swift */; };
 		99E459C8299A720200E649C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E459C7299A720200E649C1 /* SceneDelegate.swift */; };
 		99E459CF299A720400E649C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99E459CE299A720400E649C1 /* Assets.xcassets */; };
@@ -90,6 +91,7 @@
 		9936AC6A299F69D900F8C258 /* UserEditQuizWordsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEditQuizWordsProtocol.swift; sourceTree = "<group>"; };
 		9936AC6C299F69EC00F8C258 /* InitialQuizWordsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialQuizWordsProtocol.swift; sourceTree = "<group>"; };
 		9936AC6F299F787B00F8C258 /* DaoModules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaoModules.swift; sourceTree = "<group>"; };
+		9936AC7229A1130400F8C258 /* UserEditQuizWordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEditQuizWordModel.swift; sourceTree = "<group>"; };
 		99E459C2299A720200E649C1 /* 10wordsApp_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 10wordsApp_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99E459C5299A720200E649C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99E459C7299A720200E649C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -189,11 +191,12 @@
 			path = Entity;
 			sourceTree = "<group>";
 		};
-		9936AC60299F62EB00F8C258 /* Data */ = {
+		9936AC60299F62EB00F8C258 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9936AC7129A112B400F8C258 /* RealmObject */,
 			);
-			path = Data;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		9936AC6E299F702800F8C258 /* Dao */ = {
@@ -205,6 +208,14 @@
 				9936AC6C299F69EC00F8C258 /* InitialQuizWordsProtocol.swift */,
 			);
 			path = Dao;
+			sourceTree = "<group>";
+		};
+		9936AC7129A112B400F8C258 /* RealmObject */ = {
+			isa = PBXGroup;
+			children = (
+				9936AC7229A1130400F8C258 /* UserEditQuizWordModel.swift */,
+			);
+			path = RealmObject;
 			sourceTree = "<group>";
 		};
 		99E459B9299A720200E649C1 = {
@@ -226,7 +237,7 @@
 		99E459C4299A720200E649C1 /* 10wordsApp_Swift */ = {
 			isa = PBXGroup;
 			children = (
-				9936AC60299F62EB00F8C258 /* Data */,
+				9936AC60299F62EB00F8C258 /* Model */,
 				9936AC51299E891A00F8C258 /* Entity */,
 				9936AC48299E707200F8C258 /* Enum */,
 				99E459D9299A94AD00E649C1 /* DI */,
@@ -412,6 +423,7 @@
 				9936AC35299CE0E600F8C258 /* HomePresenter.swift in Sources */,
 				9936AC3B299CFF0600F8C258 /* QuizSelectPresenter.swift in Sources */,
 				9936AC57299E929800F8C258 /* InitialQuizWords.swift in Sources */,
+				9936AC7329A1130400F8C258 /* UserEditQuizWordModel.swift in Sources */,
 				9936AC6B299F69D900F8C258 /* UserEditQuizWordsProtocol.swift in Sources */,
 				9936AC5B299F5B0800F8C258 /* SingletonContainer.swift in Sources */,
 				9936AC47299D09A100F8C258 /* QuizShowProtocol.swift in Sources */,

@@ -11,8 +11,8 @@ import RealmSwift
 class UserEditQuizWords: UserEditQuizWordsProtocol {
     //TODO: Realmからリスト型を呼び出す予定
     func fetchValues() -> [QuizWordEntity] {
-        var list = List<String>()
-        var array = ["a","b","c","d","e","f","g","h"]
+        let list = List<String>()
+        let array = ["a","b","c","d","e","f","g","h"]
         array.forEach { figure in
             list.append(figure)
         }
