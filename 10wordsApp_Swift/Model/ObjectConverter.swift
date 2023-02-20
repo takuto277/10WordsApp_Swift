@@ -17,5 +17,11 @@ class ObjectConverter {
         return model
     }
     
- //   static func convertQuizWordEntity(_ userWord)
+    static func convertQuizWordEntity(_ model: UserEditQuizWordModel) -> QuizWordEntity {
+        return QuizWordEntity(
+            key: model.id,
+            english: model.english,
+            japanese: model.japanese
+        )
+    }
 }

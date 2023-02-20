@@ -10,5 +10,5 @@ import RealmSwift
 
 protocol UserEditQuizWordsProtocol {
     func setValue(_ model: UserEditQuizWordModel)
-    func fetchValues() -> [QuizWordEntity]
+    func fetchValues() -> Results<UserEditQuizWordModel>
 }

@@ -32,7 +32,10 @@ extension QuizWordsRepository: QuizWordsRepositoryProtocol {
         case .initial:
             return self.initialQuizWords.fetchValues()
         case .userEdit:
-            return self.userEditQuizWords.fetchValues()
+                //TODO:動作確認できてない
+            return self.userEditQuizWords.fetchValues().map { list in
+                ObjectConverter.convertQuizWordEntity(list)
+            }
         }
     }
 }
