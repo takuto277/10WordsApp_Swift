@@ -23,6 +23,9 @@ class UserEditQuizWords: UserEditQuizWordsProtocol {
     
     //TODO: Realmからリスト型を呼び出す予定
     func fetchValues() -> [QuizWordEntity] {
+        let realm = RealmManager.shared.realm
+        let hoge = realm.objects(UserEditQuizWordModel.self)
+        
         let list = List<String>()
         let array = ["a","b","c","d","e","f","g","h"]
         array.forEach { figure in

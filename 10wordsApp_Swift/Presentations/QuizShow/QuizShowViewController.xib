@@ -20,62 +20,94 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="日本語訳を表示" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UAY-RL-Esw">
-                    <rect key="frame" x="136" y="229.33333333333334" width="121.33333333333331" height="20.333333333333343"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="7Mm-3d-aMD">
-                    <rect key="frame" x="44" y="349.66666666666669" width="305.33333333333331" height="116.66666666666669"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B61-yg-nvf">
+                    <rect key="frame" x="0.0" y="58.999999999999986" width="393" height="227.66666666666663"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2xK-13-ChC">
-                            <rect key="frame" x="106" y="0.0" width="93.333333333333314" height="34.333333333333336"/>
-                            <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="訳を表示"/>
-                            <connections>
-                                <action selector="japaneseHiddenButton:" destination="-1" eventType="touchUpInside" id="2kS-MT-BgB"/>
-                            </connections>
-                        </button>
-                        <stackView opaque="NO" contentMode="scaleToFill" spacing="84" translatesAutoresizingMaskIntoConstraints="NO" id="K5Z-Oc-B7A">
-                            <rect key="frame" x="0.0" y="82.333333333333314" width="305.33333333333331" height="34.333333333333343"/>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eFr-Lp-FLr">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="227.66666666666666"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Tb-o9-7WY">
-                                    <rect key="frame" x="0.0" y="0.0" width="110.66666666666667" height="34.333333333333336"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="英単語を表示" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8xv-qx-QmK">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="205"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="日本語訳を表示" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UAY-RL-Esw">
+                                    <rect key="frame" x="0.0" y="205" width="393" height="22.666666666666657"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="8xv-qx-QmK" firstAttribute="height" secondItem="eFr-Lp-FLr" secondAttribute="height" multiplier="0.9" id="uZ8-Hx-Sl4"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="eFr-Lp-FLr" firstAttribute="width" secondItem="B61-yg-nvf" secondAttribute="width" id="5Ta-Aj-LHZ"/>
+                        <constraint firstItem="eFr-Lp-FLr" firstAttribute="centerY" secondItem="B61-yg-nvf" secondAttribute="centerY" id="9Er-IW-R5J"/>
+                        <constraint firstItem="eFr-Lp-FLr" firstAttribute="centerX" secondItem="B61-yg-nvf" secondAttribute="centerX" id="X8X-B5-vja"/>
+                        <constraint firstItem="eFr-Lp-FLr" firstAttribute="height" secondItem="B61-yg-nvf" secondAttribute="height" id="taH-Jr-0Ae"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RHN-sm-ZIZ">
+                    <rect key="frame" x="0.0" y="286.66666666666669" width="393" height="227.66666666666669"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="7Mm-3d-aMD">
+                            <rect key="frame" x="44" y="55.666666666666636" width="305.33333333333331" height="116.66666666666669"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2xK-13-ChC">
+                                    <rect key="frame" x="106" y="0.0" width="93.333333333333314" height="34.333333333333336"/>
                                     <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" title="分かる"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="訳を表示"/>
                                     <connections>
-                                        <action selector="quizCurrentButton:" destination="-1" eventType="touchUpInside" id="zFX-Mi-3Kx"/>
+                                        <action selector="japaneseHiddenButton:" destination="-1" eventType="touchUpInside" id="2kS-MT-BgB"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PsA-Q3-2YD">
-                                    <rect key="frame" x="194.66666666666666" y="0.0" width="110.66666666666666" height="34.333333333333336"/>
-                                    <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" title="分からない"/>
-                                    <connections>
-                                        <action selector="quizWrongButton:" destination="-1" eventType="touchUpInside" id="Ond-Is-gic"/>
-                                    </connections>
-                                </button>
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="84" translatesAutoresizingMaskIntoConstraints="NO" id="K5Z-Oc-B7A">
+                                    <rect key="frame" x="0.0" y="82.333333333333371" width="305.33333333333331" height="34.333333333333343"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Tb-o9-7WY">
+                                            <rect key="frame" x="0.0" y="0.0" width="110.66666666666667" height="34.333333333333336"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="分かる"/>
+                                            <connections>
+                                                <action selector="quizCurrentButton:" destination="-1" eventType="touchUpInside" id="zFX-Mi-3Kx"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PsA-Q3-2YD">
+                                            <rect key="frame" x="194.66666666666666" y="0.0" width="110.66666666666666" height="34.333333333333336"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="分からない"/>
+                                            <connections>
+                                                <action selector="quizWrongButton:" destination="-1" eventType="touchUpInside" id="Ond-Is-gic"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
                             </subviews>
                         </stackView>
                     </subviews>
-                </stackView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="英単語を表示" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8xv-qx-QmK">
-                    <rect key="frame" x="144.66666666666666" y="159" width="104" height="20.333333333333343"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="7Mm-3d-aMD" firstAttribute="centerX" secondItem="RHN-sm-ZIZ" secondAttribute="centerX" id="Kls-ac-EWb"/>
+                        <constraint firstItem="7Mm-3d-aMD" firstAttribute="centerY" secondItem="RHN-sm-ZIZ" secondAttribute="centerY" id="ZI9-KV-xNN"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="UAY-RL-Esw" firstAttribute="top" secondItem="8xv-qx-QmK" secondAttribute="bottom" constant="50" id="bjp-d0-nT1"/>
-                <constraint firstItem="8xv-qx-QmK" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="fez-71-09C"/>
-                <constraint firstItem="7Mm-3d-aMD" firstAttribute="top" secondItem="UAY-RL-Esw" secondAttribute="bottom" constant="100" id="kdO-uk-lau"/>
-                <constraint firstItem="8xv-qx-QmK" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="nVv-uU-LWV"/>
-                <constraint firstItem="UAY-RL-Esw" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="o3Y-ZT-YVs"/>
-                <constraint firstItem="7Mm-3d-aMD" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="u7D-4X-3Pu"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="B61-yg-nvf" secondAttribute="trailing" id="0Hs-Kc-v66"/>
+                <constraint firstItem="B61-yg-nvf" firstAttribute="height" secondItem="fnl-2z-Ty3" secondAttribute="height" multiplier="0.3" id="5s8-iz-rJw"/>
+                <constraint firstItem="RHN-sm-ZIZ" firstAttribute="top" secondItem="B61-yg-nvf" secondAttribute="bottom" id="NeS-OS-y79"/>
+                <constraint firstItem="RHN-sm-ZIZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="a2f-SL-cB8"/>
+                <constraint firstItem="B61-yg-nvf" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="cGr-xA-VGz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="RHN-sm-ZIZ" secondAttribute="trailing" id="iNg-6F-qoX"/>
+                <constraint firstItem="RHN-sm-ZIZ" firstAttribute="height" secondItem="fnl-2z-Ty3" secondAttribute="height" multiplier="0.3" id="kcC-1C-TOG"/>
+                <constraint firstItem="B61-yg-nvf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="uPk-pp-AV3"/>
             </constraints>
             <point key="canvasLocation" x="127" y="21"/>
         </view>

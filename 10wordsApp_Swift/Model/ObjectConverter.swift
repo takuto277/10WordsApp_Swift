@@ -16,4 +16,6 @@ class ObjectConverter {
         
         return model
     }
+    
+ //   static func convertQuizWordEntity(_ userWord)
 }

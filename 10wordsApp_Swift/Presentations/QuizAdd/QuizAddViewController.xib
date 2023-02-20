@@ -20,27 +20,31 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sc8-y1-xjE">
+                    <rect key="frame" x="0.0" y="59" width="393" height="76"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="69" translatesAutoresizingMaskIntoConstraints="NO" id="eRv-2d-Et5">
-                    <rect key="frame" x="98.333333333333329" y="159.00000000000003" width="196.33333333333337" height="329.66666666666674"/>
+                    <rect key="frame" x="0.0" y="134.99999999999997" width="393" height="379.33333333333326"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="単語を追加する" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWP-gd-D2a">
-                            <rect key="frame" x="37.666666666666679" y="0.0" width="121.33333333333331" height="20.333333333333332"/>
+                            <rect key="frame" x="136" y="0.0" width="121.33333333333331" height="20.333333333333332"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="英語を入力" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Arp-B8-SnL">
-                            <rect key="frame" x="0.0" y="89.333333333333343" width="196.33333333333334" height="34"/>
+                            <rect key="frame" x="98.333333333333329" y="89.333333333333343" width="196.33333333333337" height="38"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="日本語を入力" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bmS-sC-632">
-                            <rect key="frame" x="0.0" y="192.33333333333331" width="196.33333333333334" height="34"/>
+                            <rect key="frame" x="98.333333333333329" y="196.33333333333331" width="196.33333333333337" height="37.666666666666657"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9jL-cP-6me">
-                            <rect key="frame" x="43.000000000000007" y="295.33333333333331" width="110.66666666666669" height="34.333333333333314"/>
+                            <rect key="frame" x="141.33333333333334" y="303" width="110.66666666666666" height="76.333333333333314"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title="単語を登録"/>
                             <connections>
@@ -49,16 +53,25 @@
                         </button>
                     </subviews>
                     <constraints>
+                        <constraint firstItem="bmS-sC-632" firstAttribute="height" secondItem="eRv-2d-Et5" secondAttribute="height" multiplier="0.1" id="9Ja-V5-ShC"/>
                         <constraint firstItem="bmS-sC-632" firstAttribute="width" secondItem="Arp-B8-SnL" secondAttribute="width" id="CVL-Jg-k7n"/>
+                        <constraint firstItem="Arp-B8-SnL" firstAttribute="height" secondItem="eRv-2d-Et5" secondAttribute="height" multiplier="0.1" id="IWb-VQ-sGb"/>
                     </constraints>
                 </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="eRv-2d-Et5" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="AIv-bO-PHA"/>
+                <constraint firstItem="sc8-y1-xjE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="27n-j4-V2O"/>
                 <constraint firstItem="Arp-B8-SnL" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.5" id="II2-cW-soQ"/>
+                <constraint firstItem="eRv-2d-Et5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="NCM-e6-SMF"/>
+                <constraint firstItem="sc8-y1-xjE" firstAttribute="height" secondItem="fnl-2z-Ty3" secondAttribute="height" multiplier="0.1" id="RUG-0j-8v4"/>
                 <constraint firstItem="eRv-2d-Et5" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="TYQ-3v-boA"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eRv-2d-Et5" secondAttribute="trailing" id="WNn-Nd-aRh"/>
+                <constraint firstItem="eRv-2d-Et5" firstAttribute="height" secondItem="fnl-2z-Ty3" secondAttribute="height" multiplier="0.5" id="dYC-0g-gLq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sc8-y1-xjE" secondAttribute="trailing" id="eMQ-pV-HQX"/>
+                <constraint firstItem="eRv-2d-Et5" firstAttribute="top" secondItem="sc8-y1-xjE" secondAttribute="bottom" id="ppc-zx-029"/>
+                <constraint firstItem="sc8-y1-xjE" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="szH-2N-bgB"/>
             </constraints>
             <point key="canvasLocation" x="108" y="21"/>
         </view>
