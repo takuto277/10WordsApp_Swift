@@ -197,15 +197,6 @@
 			path = Entity;
 			sourceTree = "<group>";
 		};
-		9936AC60299F62EB00F8C258 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				9936AC7129A112B400F8C258 /* RealmObject */,
-				9936AC7429A126BD00F8C258 /* ObjectConverter.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		9936AC6E299F702800F8C258 /* Dao */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,6 +224,22 @@
 			path = Managers;
 			sourceTree = "<group>";
 		};
+		99396BB029A50F09004A9B55 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				99396BB129A50F13004A9B55 /* DB */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		99396BB129A50F13004A9B55 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				9936AC6E299F702800F8C258 /* Dao */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
 		99E459B9299A720200E649C1 = {
 			isa = PBXGroup;
 			children = (
@@ -252,12 +259,8 @@
 		99E459C4299A720200E649C1 /* 10wordsApp_Swift */ = {
 			isa = PBXGroup;
 			children = (
+				99396BB029A50F09004A9B55 /* Data */,
 				9936AC7829A1309A00F8C258 /* Managers */,
-				9936AC60299F62EB00F8C258 /* Model */,
-				9936AC51299E891A00F8C258 /* Entity */,
-				9936AC48299E707200F8C258 /* Enum */,
-				99E459D9299A94AD00E649C1 /* DI */,
-				99E459DD299A952200E649C1 /* Extension */,
 				99E459DC299A951800E649C1 /* Models */,
 				99E459DB299A950900E649C1 /* Repositories */,
 				99E459DE299A954700E649C1 /* Presentations */,
@@ -304,7 +307,12 @@
 		99E459DC299A951800E649C1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				9936AC6E299F702800F8C258 /* Dao */,
+				99E459D9299A94AD00E649C1 /* DI */,
+				99E459DD299A952200E649C1 /* Extension */,
+				9936AC48299E707200F8C258 /* Enum */,
+				9936AC51299E891A00F8C258 /* Entity */,
+				9936AC7129A112B400F8C258 /* RealmObject */,
+				9936AC7429A126BD00F8C258 /* ObjectConverter.swift */,
 				9936AC38299CE9AD00F8C258 /* PlanSource.swift */,
 				9936AC58299F584B00F8C258 /* PlanSourceProtocol.swift */,
 			);
