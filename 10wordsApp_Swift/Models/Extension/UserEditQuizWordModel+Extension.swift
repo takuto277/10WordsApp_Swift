@@ -10,7 +10,8 @@ import RealmSwift
 
 extension UserEditQuizWordModel {
     static func incrementId(_ model: UserEditQuizWordModel) -> UserEditQuizWordModel {
-        let realm = RealmManager.shared.realm
+        //TODO: シングルトンを削除したときの弊害、どうすべきか
+        let realm: Realm = try! Realm()
         model.id = (realm.objects(UserEditQuizWordModel.self).max(ofProperty: "id") as Int? ?? 0) + 1
         return model
     }
