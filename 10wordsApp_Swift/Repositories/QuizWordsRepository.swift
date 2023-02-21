@@ -16,13 +16,30 @@ final class QuizWordsRepository {
         self.initialQuizWords = initialQuizWords
         self.userEditQuizWords = userEditQuizWords
     }
+    
+    private func convertUserEditQuizWordModel(_ quizWordEntity: QuizWordEntity) -> UserEditQuizWordModel {
+        let model = UserEditQuizWordModel()
+        
+        model.english = quizWordEntity.english
+        model.japanese = quizWordEntity.japanese
+        
+        return model
+    }
+    
+    private func convertQuizWordEntity(_ model: UserEditQuizWordModel) -> QuizWordEntity {
+        return QuizWordEntity(
+            key: model.id,
+            english: model.english,
+            japanese: model.japanese
+        )
+    }
 }
 
 extension QuizWordsRepository: QuizWordsRepositoryProtocol {
     
     func setUserEditQuizWord(_ quizWordEntity: QuizWordEntity) {
         let model = UserEditQuizWordModel.incrementId(
-            ObjectConverter.convertUserEditQuizWordModel(quizWordEntity)
+            self.convertUserEditQuizWordModel(quizWordEntity)
         )
         self.userEditQuizWords.setValue(model)
     }
@@ -34,7 +51,7 @@ extension QuizWordsRepository: QuizWordsRepositoryProtocol {
         case .userEdit:
                 //TODO:動作確認できてない
             return self.userEditQuizWords.fetchValues().map { list in
-                ObjectConverter.convertQuizWordEntity(list)
+                self.convertQuizWordEntity(list)
             }
         }
     }

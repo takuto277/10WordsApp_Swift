@@ -8,11 +8,11 @@
 import Foundation
 import RealmSwift
 
-class RealmManager {
-    static let shared = RealmManager()
+//TODO: Managerを使わない命名の見直し
+class RealmManager: RealmProtocol {
     let realm: Realm
     
-    private init() {
+    init() {
         self.realm = try! Realm()
     }
 }

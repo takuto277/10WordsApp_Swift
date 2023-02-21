@@ -13,8 +13,8 @@ struct DaoModules {
     
     static func inject() -> DaoModules {
         DaoModules(
-            initialQuizWords: InitialQuizWords(),
-            userEditQuizWords: UserEditQuizWords()
+            initialQuizWords: InitialQuizWords(realm: RealmManager().realm),
+            userEditQuizWords: UserEditQuizWords(realm: RealmManager().realm)
         )
     }
 }

@@ -9,6 +9,12 @@ import Foundation
 import RealmSwift
 
 class InitialQuizWords: InitialQuizWordsProtocol {
+    private let realm: Realm
+    
+    init(realm: Realm) {
+        self.realm = realm
+    }
+    
     //TODO: Realmからリスト型を呼び出す予定
     func fetchValues() -> [QuizWordEntity] {
         let list = List<String>()

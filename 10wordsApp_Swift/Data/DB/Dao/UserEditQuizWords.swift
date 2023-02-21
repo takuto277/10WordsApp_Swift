@@ -9,9 +9,13 @@ import Foundation
 import RealmSwift
 
 class UserEditQuizWords: UserEditQuizWordsProtocol {
+    private let realm: Realm
+    
+    init(realm: Realm) {
+        self.realm = realm
+    }
     
     func setValue(_ model: UserEditQuizWordModel) {
-        let realm = RealmManager.shared.realm
         do {
             try realm.write {
                 realm.add(model)
@@ -23,7 +27,6 @@ class UserEditQuizWords: UserEditQuizWordsProtocol {
     
     //TODO: Realmからリスト型を呼び出す予定
     func fetchValues() -> Results<UserEditQuizWordModel> {
-        let realm = RealmManager.shared.realm
         return realm.objects(UserEditQuizWordModel.self)
     }
 }
