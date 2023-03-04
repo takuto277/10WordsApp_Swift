@@ -11,7 +11,9 @@ import UIKit
 struct ViewControllerFactory {
     static func createHomeViewController() -> UIViewController {
         let presenter = HomePresenter(
-            planRepository: SingletonContainer.shard.repositoryModeles.planRepository
+            planRepository: SingletonContainer.shard.repositoryModeles.planRepository,
+            quizWordsRepository: SingletonContainer.shard.repositoryModeles.quizWordsRepository,
+            apiRepository: SingletonContainer.shard.repositoryModeles.apiRepository
         )
         let vc = HomeViewController(presenter: presenter)
         vc.modalPresentationStyle = .fullScreen

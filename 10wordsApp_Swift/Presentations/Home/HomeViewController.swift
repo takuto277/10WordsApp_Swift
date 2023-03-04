@@ -44,16 +44,7 @@ final class HomeViewController: UIViewController {
     }
     
     @IBAction func getInitialQuizButton(_ sender: Any){
-        let provider = MoyaProvider<InitialQuizWordAPI>()
-        
-        provider.request(.getInitialQuizWord) { result in
-            switch result {
-            case let .success(response):
-                let date = response.data
-            case let .failure(error):
-                let error = error
-            }
-        }
+        self.presenter.fetchInitialQuiz()
     }
 
     override func viewDidLoad() {

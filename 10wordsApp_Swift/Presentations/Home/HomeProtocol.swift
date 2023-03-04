@@ -10,6 +10,7 @@ import Foundation
 protocol HomeProtocol: AnyObject {
     func attachView(view: HomeViewProtocol)
     func planChange(_ planSwich: Bool)
+    func fetchInitialQuiz()
 }
 
 protocol HomeViewProtocol: AnyObject {

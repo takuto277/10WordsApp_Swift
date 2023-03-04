@@ -9,5 +9,6 @@ import Foundation
 import RealmSwift
 
 protocol InitialQuizWordsProtocol {
+    func setValue(_ model: [InitialQuizWordModel])
     func fetchValues() -> [QuizWordEntity]
 }

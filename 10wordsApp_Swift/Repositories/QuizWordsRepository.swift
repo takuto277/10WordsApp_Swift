@@ -44,6 +44,28 @@ extension QuizWordsRepository: QuizWordsRepositoryProtocol {
         self.userEditQuizWords.setValue(model)
     }
     
+    func setInitialQuizWord(_ initialWords: InitialWords) {
+        
+        var models = [InitialQuizWordModel()]
+        
+        for list in initialWords.data {
+            let model = InitialQuizWordModel()
+            model.id = list.ID
+            model.english = list.english
+            model.japanese = list.japanese
+            models.append(model)
+        }
+        self.initialQuizWords.setValue(models)
+        
+//        models = initialWords.data.map { list in
+//            let model = InitialQuizWordModel()
+//            model.id = list.ID
+//            model.english = list.english
+//            model.japanese = list.japanese
+//
+//        }
+    }
+    
     func findByPlan(_ quizPlan: QuizPlan) -> [QuizWordEntity] {
         switch quizPlan {
         case .initial:

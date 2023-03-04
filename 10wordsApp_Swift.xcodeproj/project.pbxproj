@@ -51,6 +51,10 @@
 		9936AC7A29A130B800F8C258 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9936AC7929A130B800F8C258 /* RealmManager.swift */; };
 		99396BB429A516A7004A9B55 /* RealmProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99396BB329A516A7004A9B55 /* RealmProtocol.swift */; };
 		99396BB829B34EB0004A9B55 /* InitialQuizWordAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99396BB729B34EB0004A9B55 /* InitialQuizWordAPI.swift */; };
+		99396BBC29B3A183004A9B55 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 99396BBB29B3A183004A9B55 /* Moya */; };
+		99396BBE29B3B0BE004A9B55 /* APIRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99396BBD29B3B0BE004A9B55 /* APIRepository.swift */; };
+		99396BC029B3B0D6004A9B55 /* APIRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99396BBF29B3B0D6004A9B55 /* APIRepositoryProtocol.swift */; };
+		99396BC229B3B988004A9B55 /* InitialQuizWordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99396BC129B3B988004A9B55 /* InitialQuizWordModel.swift */; };
 		99E459C6299A720200E649C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E459C5299A720200E649C1 /* AppDelegate.swift */; };
 		99E459C8299A720200E649C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E459C7299A720200E649C1 /* SceneDelegate.swift */; };
 		99E459CF299A720400E649C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99E459CE299A720400E649C1 /* Assets.xcassets */; };
@@ -100,6 +104,9 @@
 		9936AC7929A130B800F8C258 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		99396BB329A516A7004A9B55 /* RealmProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmProtocol.swift; sourceTree = "<group>"; };
 		99396BB729B34EB0004A9B55 /* InitialQuizWordAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialQuizWordAPI.swift; sourceTree = "<group>"; };
+		99396BBD29B3B0BE004A9B55 /* APIRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRepository.swift; sourceTree = "<group>"; };
+		99396BBF29B3B0D6004A9B55 /* APIRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRepositoryProtocol.swift; sourceTree = "<group>"; };
+		99396BC129B3B988004A9B55 /* InitialQuizWordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialQuizWordModel.swift; sourceTree = "<group>"; };
 		99E459C2299A720200E649C1 /* 10wordsApp_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 10wordsApp_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99E459C5299A720200E649C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99E459C7299A720200E649C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +122,7 @@
 			files = (
 				9936AC65299F646200F8C258 /* RealmSwift in Frameworks */,
 				9936AC63299F646200F8C258 /* Realm in Frameworks */,
+				99396BBC29B3A183004A9B55 /* Moya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				9936AC7229A1130400F8C258 /* UserEditQuizWordModel.swift */,
+				99396BC129B3B988004A9B55 /* InitialQuizWordModel.swift */,
 			);
 			path = RealmObject;
 			sourceTree = "<group>";
@@ -320,6 +329,8 @@
 				9936AC4F299E74B000F8C258 /* PlanRepositoryProtocol.swift */,
 				9936AC66299F68A600F8C258 /* QuizWordsRepository.swift */,
 				9936AC68299F68BC00F8C258 /* QuizWordsRepositoryProtocol.swift */,
+				99396BBD29B3B0BE004A9B55 /* APIRepository.swift */,
+				99396BBF29B3B0D6004A9B55 /* APIRepositoryProtocol.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -378,6 +389,7 @@
 			packageProductDependencies = (
 				9936AC62299F646200F8C258 /* Realm */,
 				9936AC64299F646200F8C258 /* RealmSwift */,
+				99396BBB29B3A183004A9B55 /* Moya */,
 			);
 			productName = 10wordsApp_Swift;
 			productReference = 99E459C2299A720200E649C1 /* 10wordsApp_Swift.app */;
@@ -409,7 +421,7 @@
 			mainGroup = 99E459B9299A720200E649C1;
 			packageReferences = (
 				9936AC61299F646200F8C258 /* XCRemoteSwiftPackageReference "realm-swift" */,
-				99396BB929B35446004A9B55 /* XCRemoteSwiftPackageReference "Moya" */,
+				99396BBA29B3A183004A9B55 /* XCRemoteSwiftPackageReference "Moya" */,
 			);
 			productRefGroup = 99E459C3299A720200E649C1 /* Products */;
 			projectDirPath = "";
@@ -461,12 +473,14 @@
 				9936AC67299F68A600F8C258 /* QuizWordsRepository.swift in Sources */,
 				9936AC6D299F69EC00F8C258 /* InitialQuizWordsProtocol.swift in Sources */,
 				9936AC41299D07E800F8C258 /* QuizAddPresenter.swift in Sources */,
+				99396BC029B3B0D6004A9B55 /* APIRepositoryProtocol.swift in Sources */,
 				9936AC37299CE13300F8C258 /* HomeProtocol.swift in Sources */,
 				9936AC4D299E747A00F8C258 /* PlanRepository.swift in Sources */,
 				9936AC3D299CFF1A00F8C258 /* QuizSelectProtocol.swift in Sources */,
 				99E459C8299A720200E649C1 /* SceneDelegate.swift in Sources */,
 				9936AC5D299F5CDC00F8C258 /* PlanSourceModules.swift in Sources */,
 				9936AC29299BD99800F8C258 /* QuizDeleteViewController.swift in Sources */,
+				99396BC229B3B988004A9B55 /* InitialQuizWordModel.swift in Sources */,
 				9936AC45299D098F00F8C258 /* QuizShowPresenter.swift in Sources */,
 				9936AC35299CE0E600F8C258 /* HomePresenter.swift in Sources */,
 				9936AC3B299CFF0600F8C258 /* QuizSelectPresenter.swift in Sources */,
@@ -478,6 +492,7 @@
 				9936AC53299E89E900F8C258 /* QuizWordEntity.swift in Sources */,
 				9936AC23299BD6C000F8C258 /* QuizShowViewController.swift in Sources */,
 				9936AC70299F787B00F8C258 /* DaoModules.swift in Sources */,
+				99396BBE29B3B0BE004A9B55 /* APIRepository.swift in Sources */,
 				9936AC69299F68BC00F8C258 /* QuizWordsRepositoryProtocol.swift in Sources */,
 				99396BB829B34EB0004A9B55 /* InitialQuizWordAPI.swift in Sources */,
 				9936AC32299BDB5300F8C258 /* QuizAddViewController.swift in Sources */,
@@ -696,12 +711,12 @@
 				minimumVersion = 10.36.0;
 			};
 		};
-		99396BB929B35446004A9B55 /* XCRemoteSwiftPackageReference "Moya" */ = {
+		99396BBA29B3A183004A9B55 /* XCRemoteSwiftPackageReference "Moya" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Moya/Moya";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 15.0.0;
+				minimumVersion = 15.0.3;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -716,6 +731,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9936AC61299F646200F8C258 /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = RealmSwift;
+		};
+		99396BBB29B3A183004A9B55 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 99396BBA29B3A183004A9B55 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

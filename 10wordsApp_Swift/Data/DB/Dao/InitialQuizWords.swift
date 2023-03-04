@@ -15,6 +15,22 @@ class InitialQuizWords: InitialQuizWordsProtocol {
         self.realm = realm
     }
     
+    func setValue(_ models: [InitialQuizWordModel]) {
+        do {
+            let initialwordsList = List<InitialQuizWordModel>()
+            
+            for model in models {
+                initialwordsList.append(model)
+            }
+            
+            try realm.write {
+                realm.add(initialwordsList)
+            }
+        } catch {
+            print("初期データ保存失敗")
+        }
+    }
+    
     //TODO: Realmからリスト型を呼び出す予定
     func fetchValues() -> [QuizWordEntity] {
         let list = List<String>()
