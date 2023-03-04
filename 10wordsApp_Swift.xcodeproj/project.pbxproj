@@ -50,6 +50,7 @@
 		9936AC7729A12A7E00F8C258 /* UserEditQuizWordModel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9936AC7629A12A7E00F8C258 /* UserEditQuizWordModel+Extension.swift */; };
 		9936AC7A29A130B800F8C258 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9936AC7929A130B800F8C258 /* RealmManager.swift */; };
 		99396BB429A516A7004A9B55 /* RealmProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99396BB329A516A7004A9B55 /* RealmProtocol.swift */; };
+		99396BB829B34EB0004A9B55 /* InitialQuizWordAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99396BB729B34EB0004A9B55 /* InitialQuizWordAPI.swift */; };
 		99E459C6299A720200E649C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E459C5299A720200E649C1 /* AppDelegate.swift */; };
 		99E459C8299A720200E649C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E459C7299A720200E649C1 /* SceneDelegate.swift */; };
 		99E459CF299A720400E649C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99E459CE299A720400E649C1 /* Assets.xcassets */; };
@@ -98,6 +99,7 @@
 		9936AC7629A12A7E00F8C258 /* UserEditQuizWordModel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserEditQuizWordModel+Extension.swift"; sourceTree = "<group>"; };
 		9936AC7929A130B800F8C258 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		99396BB329A516A7004A9B55 /* RealmProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmProtocol.swift; sourceTree = "<group>"; };
+		99396BB729B34EB0004A9B55 /* InitialQuizWordAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialQuizWordAPI.swift; sourceTree = "<group>"; };
 		99E459C2299A720200E649C1 /* 10wordsApp_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 10wordsApp_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99E459C5299A720200E649C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99E459C7299A720200E649C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 		99396BB029A50F09004A9B55 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				99396BB529B34E39004A9B55 /* Network */,
 				99396BB129A50F13004A9B55 /* DB */,
 			);
 			path = Data;
@@ -239,6 +242,22 @@
 				9936AC6E299F702800F8C258 /* Dao */,
 			);
 			path = DB;
+			sourceTree = "<group>";
+		};
+		99396BB529B34E39004A9B55 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				99396BB629B34E50004A9B55 /* API */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		99396BB629B34E50004A9B55 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				99396BB729B34EB0004A9B55 /* InitialQuizWordAPI.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 		99E459B9299A720200E649C1 = {
@@ -390,6 +409,7 @@
 			mainGroup = 99E459B9299A720200E649C1;
 			packageReferences = (
 				9936AC61299F646200F8C258 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				99396BB929B35446004A9B55 /* XCRemoteSwiftPackageReference "Moya" */,
 			);
 			productRefGroup = 99E459C3299A720200E649C1 /* Products */;
 			projectDirPath = "";
@@ -459,6 +479,7 @@
 				9936AC23299BD6C000F8C258 /* QuizShowViewController.swift in Sources */,
 				9936AC70299F787B00F8C258 /* DaoModules.swift in Sources */,
 				9936AC69299F68BC00F8C258 /* QuizWordsRepositoryProtocol.swift in Sources */,
+				99396BB829B34EB0004A9B55 /* InitialQuizWordAPI.swift in Sources */,
 				9936AC32299BDB5300F8C258 /* QuizAddViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -673,6 +694,14 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 10.36.0;
+			};
+		};
+		99396BB929B35446004A9B55 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
