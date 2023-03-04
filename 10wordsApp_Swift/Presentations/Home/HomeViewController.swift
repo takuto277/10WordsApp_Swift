@@ -6,6 +6,8 @@
 //
 
 import UIKit
+// TODO: ここでMoyaは呼ばない、後ほど修正
+import Moya
 
 final class HomeViewController: UIViewController {
     private let presenter: HomeProtocol
@@ -42,7 +44,16 @@ final class HomeViewController: UIViewController {
     }
     
     @IBAction func getInitialQuizButton(_ sender: Any){
+        let provider = MoyaProvider<InitialQuizWordAPI>()
         
+        provider.request(.getInitialQuizWord) { result in
+            switch result {
+            case let .success(response):
+                let date = response.data
+            case let .failure(error):
+                let error = error
+            }
+        }
     }
 
     override func viewDidLoad() {
