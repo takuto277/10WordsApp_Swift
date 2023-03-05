@@ -33,6 +33,14 @@ final class QuizWordsRepository {
             japanese: model.japanese
         )
     }
+    
+    private func convertQuizWordEntity(_ model: InitialQuizWordModel) -> QuizWordEntity {
+        return QuizWordEntity(
+            key: model.id,
+            english: model.english,
+            japanese: model.japanese
+        )
+    }
 }
 
 extension QuizWordsRepository: QuizWordsRepositoryProtocol {
@@ -61,7 +69,9 @@ extension QuizWordsRepository: QuizWordsRepositoryProtocol {
     func findByPlan(_ quizPlan: QuizPlan) -> [QuizWordEntity] {
         switch quizPlan {
         case .initial:
-            return self.initialQuizWords.fetchValues()
+            return self.initialQuizWords.fetchValues().map { list in
+                self.convertQuizWordEntity(list)
+            }
         case .userEdit:
                 //TODO:動作確認できてない
             return self.userEditQuizWords.fetchValues().map { list in
