@@ -20,18 +20,8 @@ final class QuizShowViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    let wordsArray = [("apple", "リンゴ"),
-                      ("banana", "バナナ"),
-                      ("11", "リンゴ"),
-                      ("12", "バナナ"),
-                      ("13", "リンゴ"),
-                      ("14", "バナナ"),
-                      ("15", "リンゴ"),
-                      ("16", "バナナ"),
-                      ("17", "リンゴ"),
-                      ("18", "バナナ"),
-                      ("19", "リンゴ"),
-                      ("20", "バナナ")]
+    // TODO: 愚直すぎる実装のため、修正予定
+    var wordsArray: [QuizWordEntity]?
     
     var index = 0
     
@@ -44,19 +34,33 @@ final class QuizShowViewController: UIViewController {
     
     @IBAction func quizCurrentButton(_ sender: Any) {
         self.index += 1
-        englishLabel.text = wordsArray[index].0
-        japaneseLabel.text = wordsArray[index].1
+        englishLabel.text = wordsArray?[index].english
+        japaneseLabel.text = wordsArray?[index].japanese
     }
     
     @IBAction func quizWrongButton(_ sender: Any) {
         self.index = 0
-        englishLabel.text = wordsArray[index].0
-        japaneseLabel.text = wordsArray[index].1
+        englishLabel.text = wordsArray?[index].english
+        japaneseLabel.text = wordsArray?[index].japanese
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        englishLabel.text = wordsArray[index].0
-        japaneseLabel.text = wordsArray[index].1
+        self.presenter.attachView(self)
+        self.presenter.fetchPlan()
     }
+}
+
+extension QuizShowViewController: QuizShowViewProtocol {
+    func didFetchPlan(_ quizPlan: QuizPlan) {
+        self.presenter.fetchQuizWords(quizPlan)
+    }
+
+    func didFetchQuizWords(_ quizWords: [QuizWordEntity]) {
+        self.wordsArray = quizWords
+        englishLabel.text = quizWords[index].english
+        japaneseLabel.text = quizWords[index].japanese
+    }
+    
+    
 }

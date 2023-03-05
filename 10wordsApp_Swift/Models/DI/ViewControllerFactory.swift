@@ -31,7 +31,10 @@ struct ViewControllerFactory {
     }
     
     static func createQuizShowViewController() -> UIViewController {
-        let presenter = QuizShowPresenter()
+        let presenter = QuizShowPresenter(
+            planRepository: SingletonContainer.shard.repositoryModeles.planRepository,
+            quizWordsRepository: SingletonContainer.shard.repositoryModeles.quizWordsRepository
+        )
         let vc = QuizShowViewController(presenter: presenter)
         vc.modalPresentationStyle = .fullScreen
         return vc

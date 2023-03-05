@@ -40,6 +40,6 @@ extension QuizSelectViewController: QuizSelectViewProtocol {
     }
     
     func didFetchQuizWords(_ quizWords: [QuizWordEntity]) {
-        self.testLabel.text = quizWords[0].english
+        self.testLabel.text = quizWords[1].english
     }
 }

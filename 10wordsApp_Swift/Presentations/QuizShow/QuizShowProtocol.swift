@@ -8,5 +8,13 @@
 import Foundation
 
 protocol QuizShowProtocol {
-    
+    func attachView(_ view: QuizShowViewProtocol)
+    func fetchPlan()
+    func fetchQuizWords(_ quizPlan: QuizPlan)
 }
+
+protocol QuizShowViewProtocol: AnyObject {
+    func didFetchPlan(_ quizPlan: QuizPlan)
+    func didFetchQuizWords(_ quizWords: [QuizWordEntity])
+}
+
