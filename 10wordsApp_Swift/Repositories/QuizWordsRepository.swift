@@ -56,14 +56,6 @@ extension QuizWordsRepository: QuizWordsRepositoryProtocol {
             models.append(model)
         }
         self.initialQuizWords.setValue(models)
-        
-//        models = initialWords.data.map { list in
-//            let model = InitialQuizWordModel()
-//            model.id = list.ID
-//            model.english = list.english
-//            model.japanese = list.japanese
-//
-//        }
     }
     
     func findByPlan(_ quizPlan: QuizPlan) -> [QuizWordEntity] {

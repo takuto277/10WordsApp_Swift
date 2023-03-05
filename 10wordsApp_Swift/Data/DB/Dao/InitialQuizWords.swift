@@ -24,8 +24,9 @@ class InitialQuizWords: InitialQuizWordsProtocol {
             }
             
             try realm.write {
-                realm.add(initialwordsList)
+                realm.add(initialwordsList, update:  .modified)
             }
+            print("初期データ保存成功")
         } catch {
             print("初期データ保存失敗")
         }
