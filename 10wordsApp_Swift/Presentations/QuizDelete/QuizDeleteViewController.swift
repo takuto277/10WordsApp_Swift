@@ -36,6 +36,12 @@ extension QuizDeleteViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "QuizDeleteTableViewCell", for: indexPath) as! QuizDeleteTableViewCell
         
+        let quiz = self.fetchQuizUseCase.execute()
+        
+        cell.idLabel.text = String(quiz[indexPath.row].key)
+        cell.englishLabel.text = quiz[indexPath.row].english
+        cell.japaneseLabel.text = quiz[indexPath.row].japanese
+        
         return cell
     }
     

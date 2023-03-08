@@ -47,4 +47,10 @@ struct ViewControllerFactory {
         vc.modalPresentationStyle = .fullScreen
         return vc
     }
+    
+    static func createQuizDeleteViewController() -> UIViewController {
+        let vc = QuizDeleteViewController(fetchQuizUseCase: SingletonContainer.shard.useCaseModules.fetchQuizUseCase)
+        vc.modalPresentationStyle = .fullScreen
+        return vc
+    }
 }

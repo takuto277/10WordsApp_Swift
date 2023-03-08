@@ -11,12 +11,14 @@ final class SingletonContainer {
     let planSourceModules: PlanSourceModules
     let daoModules: DaoModules
     let repositoryModeles: RepositoryModules
+    let useCaseModules: UseCaseModules
     
     init() {
         self.planSourceModules = PlanSourceModules.inject()
         self.daoModules = DaoModules.inject()
         self.repositoryModeles = RepositoryModules.inject(self.planSourceModules,
                                                           self.daoModules)
+        self.useCaseModules = UseCaseModules.inject(self.repositoryModeles)
     }
     
     static let shard = SingletonContainer()

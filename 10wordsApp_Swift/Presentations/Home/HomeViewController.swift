@@ -36,7 +36,7 @@ final class HomeViewController: UIViewController {
     }
     
     @IBAction func quizDeleteButton(_ sender: Any){
-        
+        self.present(ViewControllerFactory.createQuizDeleteViewController(), animated: true)
     }
     
     @IBAction func quizListButton(_ sender: Any){
