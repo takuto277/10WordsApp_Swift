@@ -34,7 +34,7 @@ extension QuizDeleteViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "DeleteCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "QuizDeleteTableViewCell", for: indexPath) as! QuizDeleteTableViewCell
         
         return cell
     }
