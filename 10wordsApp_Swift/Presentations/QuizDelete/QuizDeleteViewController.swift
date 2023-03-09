@@ -47,4 +47,7 @@ extension QuizDeleteViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // セルがタップされた時の処理を記述する
+    }
 }
