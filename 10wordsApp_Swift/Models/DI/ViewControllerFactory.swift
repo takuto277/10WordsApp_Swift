@@ -54,4 +54,11 @@ struct ViewControllerFactory {
         vc.modalPresentationStyle = .fullScreen
         return vc
     }
+    
+    static func creatQuizListViewController() -> UIViewController {
+        let presenter = QuizListPresenter(fetchQuizUseCase: SingletonContainer.shard.useCaseModules.fetchQuizUseCase)
+        let vc = QuizListViewController(presenter: presenter)
+        vc.modalPresentationStyle = .fullScreen
+        return vc
+    }
 }

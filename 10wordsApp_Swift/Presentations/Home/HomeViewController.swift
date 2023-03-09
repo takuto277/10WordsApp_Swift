@@ -40,7 +40,7 @@ final class HomeViewController: UIViewController {
     }
     
     @IBAction func quizListButton(_ sender: Any){
-        
+        self.present(ViewControllerFactory.creatQuizListViewController(), animated: true)
     }
     
     @IBAction func getInitialQuizButton(_ sender: Any){
