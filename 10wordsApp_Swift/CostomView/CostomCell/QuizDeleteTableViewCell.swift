@@ -9,10 +9,10 @@ import UIKit
 
 class QuizDeleteTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var idLabel: UILabel!
-    @IBOutlet weak var englishLabel: UILabel!
-    @IBOutlet weak var japaneseLabel: UILabel!
-
+    @IBOutlet weak var idLabel: UILabel?
+    @IBOutlet weak var englishLabel: UILabel?
+    @IBOutlet weak var japaneseLabel: UILabel?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,8 +20,6 @@ class QuizDeleteTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
         // Configure the view for the selected state
     }
-    
 }

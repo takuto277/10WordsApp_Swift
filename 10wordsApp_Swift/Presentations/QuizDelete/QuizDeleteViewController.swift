@@ -25,7 +25,8 @@ final class QuizDeleteViewController: UIViewController{
         super.viewDidLoad()
         self.tableView.delegate = self
         self.tableView.dataSource = self
-        self.tableView.register(QuizDeleteTableViewCell.self, forCellReuseIdentifier: "QuizDeleteTableViewCell")
+        self.tableView.register(UINib(nibName: String(describing: QuizDeleteTableViewCell.self), bundle: nil), forCellReuseIdentifier: "QuizDeleteCell")
+        self.tableView.reloadData()
     }
 }
 
@@ -35,7 +36,7 @@ extension QuizDeleteViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "QuizDeleteTableViewCell", for: indexPath) as! QuizDeleteTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "QuizDeleteCell", for: indexPath) as! QuizDeleteTableViewCell
         
         let quiz = self.presenter.fetchQuizWords()
         
