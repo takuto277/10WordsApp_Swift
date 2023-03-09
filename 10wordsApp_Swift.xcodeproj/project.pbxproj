@@ -60,6 +60,8 @@
 		99396BCC29B80566004A9B55 /* QuizDeleteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99396BCA29B80566004A9B55 /* QuizDeleteTableViewCell.swift */; };
 		99396BCD29B80566004A9B55 /* QuizDeleteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99396BCB29B80566004A9B55 /* QuizDeleteTableViewCell.xib */; };
 		99396BD029B952B3004A9B55 /* UseCaseModules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99396BCF29B952B3004A9B55 /* UseCaseModules.swift */; };
+		99396BD229B956DB004A9B55 /* QuizDeletePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99396BD129B956DB004A9B55 /* QuizDeletePresenter.swift */; };
+		99396BD429B957D4004A9B55 /* QuizDeleteProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99396BD329B957D4004A9B55 /* QuizDeleteProtocol.swift */; };
 		99E459C6299A720200E649C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E459C5299A720200E649C1 /* AppDelegate.swift */; };
 		99E459C8299A720200E649C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E459C7299A720200E649C1 /* SceneDelegate.swift */; };
 		99E459CF299A720400E649C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99E459CE299A720400E649C1 /* Assets.xcassets */; };
@@ -117,6 +119,8 @@
 		99396BCA29B80566004A9B55 /* QuizDeleteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizDeleteTableViewCell.swift; sourceTree = "<group>"; };
 		99396BCB29B80566004A9B55 /* QuizDeleteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuizDeleteTableViewCell.xib; sourceTree = "<group>"; };
 		99396BCF29B952B3004A9B55 /* UseCaseModules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseModules.swift; sourceTree = "<group>"; };
+		99396BD129B956DB004A9B55 /* QuizDeletePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizDeletePresenter.swift; sourceTree = "<group>"; };
+		99396BD329B957D4004A9B55 /* QuizDeleteProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizDeleteProtocol.swift; sourceTree = "<group>"; };
 		99E459C2299A720200E649C1 /* 10wordsApp_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 10wordsApp_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99E459C5299A720200E649C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99E459C7299A720200E649C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -177,6 +181,8 @@
 			children = (
 				9936AC27299BD99800F8C258 /* QuizDeleteViewController.swift */,
 				9936AC28299BD99800F8C258 /* QuizDeleteViewController.xib */,
+				99396BD129B956DB004A9B55 /* QuizDeletePresenter.swift */,
+				99396BD329B957D4004A9B55 /* QuizDeleteProtocol.swift */,
 			);
 			path = QuizDelete;
 			sourceTree = "<group>";
@@ -515,6 +521,8 @@
 				99396BCC29B80566004A9B55 /* QuizDeleteTableViewCell.swift in Sources */,
 				9936AC6D299F69EC00F8C258 /* InitialQuizWordsProtocol.swift in Sources */,
 				9936AC41299D07E800F8C258 /* QuizAddPresenter.swift in Sources */,
+				99396BD229B956DB004A9B55 /* QuizDeletePresenter.swift in Sources */,
+				99396BD429B957D4004A9B55 /* QuizDeleteProtocol.swift in Sources */,
 				99396BC029B3B0D6004A9B55 /* APIRepositoryProtocol.swift in Sources */,
 				9936AC37299CE13300F8C258 /* HomeProtocol.swift in Sources */,
 				9936AC4D299E747A00F8C258 /* PlanRepository.swift in Sources */,

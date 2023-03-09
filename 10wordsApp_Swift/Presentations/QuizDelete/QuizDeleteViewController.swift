@@ -8,11 +8,11 @@
 import UIKit
 
 final class QuizDeleteViewController: UIViewController{
-    private let fetchQuizUseCase: FetchQuizUseCaseProtocol
+    private let presenter: QuizDelteProtocol
     
-    init(fetchQuizUseCase: FetchQuizUseCaseProtocol) {
-        self.fetchQuizUseCase = fetchQuizUseCase
-        super.init()
+    init(presenter: QuizDelteProtocol) {
+        self.presenter = presenter
+        super .init(nibName: String(describing: QuizDeleteViewController.self), bundle: nil)
     }
     
     required init?(coder: NSCoder) {
@@ -25,22 +25,23 @@ final class QuizDeleteViewController: UIViewController{
         super.viewDidLoad()
         self.tableView.delegate = self
         self.tableView.dataSource = self
+        self.tableView.register(QuizDeleteTableViewCell.self, forCellReuseIdentifier: "QuizDeleteTableViewCell")
     }
 }
 
 extension QuizDeleteViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        self.fetchQuizUseCase.execute().count
+        self.presenter.fetchQuizWords().count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "QuizDeleteTableViewCell", for: indexPath) as! QuizDeleteTableViewCell
         
-        let quiz = self.fetchQuizUseCase.execute()
+        let quiz = self.presenter.fetchQuizWords()
         
-        cell.idLabel.text = String(quiz[indexPath.row].key)
-        cell.englishLabel.text = quiz[indexPath.row].english
-        cell.japaneseLabel.text = quiz[indexPath.row].japanese
+        cell.idLabel?.text = String(quiz[indexPath.row].key)
+        cell.englishLabel?.text = quiz[indexPath.row].english
+        cell.japaneseLabel?.text = quiz[indexPath.row].japanese
         
         return cell
     }
