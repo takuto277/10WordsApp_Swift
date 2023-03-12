@@ -64,6 +64,8 @@
 		99396BD429B957D4004A9B55 /* QuizDeleteProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99396BD329B957D4004A9B55 /* QuizDeleteProtocol.swift */; };
 		99396BD629BAA769004A9B55 /* QuizListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99396BD529BAA769004A9B55 /* QuizListPresenter.swift */; };
 		99396BD829BAA779004A9B55 /* QuizListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99396BD729BAA779004A9B55 /* QuizListProtocol.swift */; };
+		99396BDB29BE9A93004A9B55 /* QuizSelectCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99396BD929BE9A93004A9B55 /* QuizSelectCollectionViewCell.swift */; };
+		99396BDC29BE9A93004A9B55 /* QuizSelectCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99396BDA29BE9A93004A9B55 /* QuizSelectCollectionViewCell.xib */; };
 		99E459C6299A720200E649C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E459C5299A720200E649C1 /* AppDelegate.swift */; };
 		99E459C8299A720200E649C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E459C7299A720200E649C1 /* SceneDelegate.swift */; };
 		99E459CF299A720400E649C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99E459CE299A720400E649C1 /* Assets.xcassets */; };
@@ -125,6 +127,8 @@
 		99396BD329B957D4004A9B55 /* QuizDeleteProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizDeleteProtocol.swift; sourceTree = "<group>"; };
 		99396BD529BAA769004A9B55 /* QuizListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizListPresenter.swift; sourceTree = "<group>"; };
 		99396BD729BAA779004A9B55 /* QuizListProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizListProtocol.swift; sourceTree = "<group>"; };
+		99396BD929BE9A93004A9B55 /* QuizSelectCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizSelectCollectionViewCell.swift; sourceTree = "<group>"; };
+		99396BDA29BE9A93004A9B55 /* QuizSelectCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuizSelectCollectionViewCell.xib; sourceTree = "<group>"; };
 		99E459C2299A720200E649C1 /* 10wordsApp_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 10wordsApp_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99E459C5299A720200E649C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99E459C7299A720200E649C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -313,6 +317,8 @@
 			children = (
 				99396BCA29B80566004A9B55 /* QuizDeleteTableViewCell.swift */,
 				99396BCB29B80566004A9B55 /* QuizDeleteTableViewCell.xib */,
+				99396BD929BE9A93004A9B55 /* QuizSelectCollectionViewCell.swift */,
+				99396BDA29BE9A93004A9B55 /* QuizSelectCollectionViewCell.xib */,
 			);
 			path = CostomCell;
 			sourceTree = "<group>";
@@ -488,6 +494,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99396BDC29BE9A93004A9B55 /* QuizSelectCollectionViewCell.xib in Resources */,
 				9936AC2E299BD9AD00F8C258 /* QuizListViewController.xib in Resources */,
 				9936AC2A299BD99800F8C258 /* QuizDeleteViewController.xib in Resources */,
 				99E459D2299A720400E649C1 /* LaunchScreen.storyboard in Resources */,
@@ -536,6 +543,7 @@
 				99E459C8299A720200E649C1 /* SceneDelegate.swift in Sources */,
 				9936AC5D299F5CDC00F8C258 /* PlanSourceModules.swift in Sources */,
 				99396BD829BAA779004A9B55 /* QuizListProtocol.swift in Sources */,
+				99396BDB29BE9A93004A9B55 /* QuizSelectCollectionViewCell.swift in Sources */,
 				9936AC29299BD99800F8C258 /* QuizDeleteViewController.swift in Sources */,
 				99396BC229B3B988004A9B55 /* InitialQuizWordModel.swift in Sources */,
 				9936AC45299D098F00F8C258 /* QuizShowPresenter.swift in Sources */,
