@@ -12,6 +12,8 @@ final class QuizSelectViewController: UIViewController {
     
   //  @IBOutlet weak var testLabel: UILabel!
     
+    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
     init(presenter: QuizSelectProtocol) {
         self.presenter = presenter
         super.init(nibName: String(describing: QuizSelectViewController
@@ -28,6 +30,10 @@ final class QuizSelectViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.collectionView.delegate = self
+        self.collectionView.dataSource = self
+        self.flowLayout.estimatedItemSize = CGSize(width: collectionView.frame.width / 5, height: collectionView.frame.height / 5)
+        self.collectionView.register(UINib(nibName: String(describing: QuizSelectCollectionViewCell.self), bundle: nil), forCellWithReuseIdentifier: "QuizSelectCollectionViewCell")
         self.presenter.attachView(self)
         self.presenter.fetchPlan()
     }
@@ -41,5 +47,19 @@ extension QuizSelectViewController: QuizSelectViewProtocol {
     
     func didFetchQuizWords(_ quizWords: [QuizWordEntity]) {
       //  self.testLabel.text = quizWords[1].english
+    }
+}
+
+extension QuizSelectViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        10
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "QuizSelectCollectionViewCell", for: indexPath) as! QuizSelectCollectionViewCell
+        
+        cell.textlabel.text = "1"
+        
+        return cell
     }
 }

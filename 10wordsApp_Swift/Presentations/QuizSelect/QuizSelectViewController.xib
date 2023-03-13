@@ -10,6 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QuizSelectViewController" customModule="_0wordsApp_Swift" customModuleProvider="target">
             <connections>
+                <outlet property="collectionView" destination="bb4-tw-zoE" id="HmQ-9N-9Ff"/>
+                <outlet property="flowLayout" destination="zzU-f0-dvV" id="Uae-Qh-yPc"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
