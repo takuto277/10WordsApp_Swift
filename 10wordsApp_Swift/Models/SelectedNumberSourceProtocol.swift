@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+protocol SelectedNumberSourceProtocol {
+    func setValue(_ value: Int)
+    func value() -> Int
+}
