@@ -66,6 +66,8 @@
 		99396BD829BAA779004A9B55 /* QuizListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99396BD729BAA779004A9B55 /* QuizListProtocol.swift */; };
 		99396BDB29BE9A93004A9B55 /* QuizSelectCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99396BD929BE9A93004A9B55 /* QuizSelectCollectionViewCell.swift */; };
 		99396BDC29BE9A93004A9B55 /* QuizSelectCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99396BDA29BE9A93004A9B55 /* QuizSelectCollectionViewCell.xib */; };
+		99396BDE29BFEB7B004A9B55 /* SelectedNumberSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99396BDD29BFEB7B004A9B55 /* SelectedNumberSource.swift */; };
+		99396BE029BFEB91004A9B55 /* SelectedNumberSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99396BDF29BFEB91004A9B55 /* SelectedNumberSourceProtocol.swift */; };
 		99E459C6299A720200E649C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E459C5299A720200E649C1 /* AppDelegate.swift */; };
 		99E459C8299A720200E649C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E459C7299A720200E649C1 /* SceneDelegate.swift */; };
 		99E459CF299A720400E649C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99E459CE299A720400E649C1 /* Assets.xcassets */; };
@@ -129,6 +131,8 @@
 		99396BD729BAA779004A9B55 /* QuizListProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizListProtocol.swift; sourceTree = "<group>"; };
 		99396BD929BE9A93004A9B55 /* QuizSelectCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizSelectCollectionViewCell.swift; sourceTree = "<group>"; };
 		99396BDA29BE9A93004A9B55 /* QuizSelectCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuizSelectCollectionViewCell.xib; sourceTree = "<group>"; };
+		99396BDD29BFEB7B004A9B55 /* SelectedNumberSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedNumberSource.swift; sourceTree = "<group>"; };
+		99396BDF29BFEB91004A9B55 /* SelectedNumberSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedNumberSourceProtocol.swift; sourceTree = "<group>"; };
 		99E459C2299A720200E649C1 /* 10wordsApp_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 10wordsApp_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99E459C5299A720200E649C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99E459C7299A720200E649C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -402,6 +406,8 @@
 				9936AC7129A112B400F8C258 /* RealmObject */,
 				9936AC38299CE9AD00F8C258 /* PlanSource.swift */,
 				9936AC58299F584B00F8C258 /* PlanSourceProtocol.swift */,
+				99396BDD29BFEB7B004A9B55 /* SelectedNumberSource.swift */,
+				99396BDF29BFEB91004A9B55 /* SelectedNumberSourceProtocol.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -552,6 +558,8 @@
 				9936AC57299E929800F8C258 /* InitialQuizWords.swift in Sources */,
 				9936AC7329A1130400F8C258 /* UserEditQuizWordModel.swift in Sources */,
 				9936AC6B299F69D900F8C258 /* UserEditQuizWordsProtocol.swift in Sources */,
+				99396BE029BFEB91004A9B55 /* SelectedNumberSourceProtocol.swift in Sources */,
+				99396BDE29BFEB7B004A9B55 /* SelectedNumberSource.swift in Sources */,
 				99396BC729B63A6D004A9B55 /* FetchQuizUseCaseProtocol.swift in Sources */,
 				9936AC5B299F5B0800F8C258 /* SingletonContainer.swift in Sources */,
 				9936AC47299D09A100F8C258 /* QuizShowProtocol.swift in Sources */,
