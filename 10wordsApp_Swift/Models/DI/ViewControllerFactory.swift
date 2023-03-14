@@ -24,6 +24,7 @@ struct ViewControllerFactory {
         let presenter = QuizSelectPresenter(
             planRepository: SingletonContainer.shard.repositoryModeles.planRepository,
             quizWordsRepository: SingletonContainer.shard.repositoryModeles.quizWordsRepository,
+            selectedNumberRepository: SingletonContainer.shard.repositoryModeles.selectedNumberRepository,
             fetchQuizUseCase: SingletonContainer.shard.useCaseModules.fetchQuizUseCase
         )
         let vc = QuizSelectViewController(presenter: presenter)

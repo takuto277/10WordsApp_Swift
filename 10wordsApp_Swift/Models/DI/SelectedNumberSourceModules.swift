@@ -8,11 +8,11 @@
 import Foundation
 
 struct SelectedNumberSourceModules {
-    let selectedNumberSourceModules: SelectedNumberSourceProtocol
+    let selectedNumberSource: SelectedNumberSourceProtocol
     
     static func inject() -> SelectedNumberSourceModules {
         SelectedNumberSourceModules(
-            selectedNumberSourceModules: SelectedNumberSource()
+            selectedNumberSource: SelectedNumberSource()
         )
     }
 }

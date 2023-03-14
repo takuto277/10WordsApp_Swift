@@ -26,7 +26,7 @@ final class QuizSelectViewController: UIViewController, QuizSelectViewProtocol {
     }
     
     @IBAction func button(_ sender: Any) {
-        self.present(ViewControllerFactory.createQuizShowViewController(), animated: true)
+        
     }
 
     override func viewDidLoad() {
@@ -55,6 +55,7 @@ extension QuizSelectViewController: UICollectionViewDelegate, UICollectionViewDa
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        self.presenter.selectedNumberChange(indexPath.row)
+        self.present(ViewControllerFactory.createQuizShowViewController(), animated: true)
     }
 }

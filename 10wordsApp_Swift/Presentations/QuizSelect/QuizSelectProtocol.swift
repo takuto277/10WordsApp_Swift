@@ -10,6 +10,7 @@ import Foundation
 protocol QuizSelectProtocol: AnyObject {
     func attachView(_ view: QuizSelectViewProtocol)
     func fetchQuizWords() -> [QuizWordEntity]
+    func selectedNumberChange(_ row: Int)
 }
 
 protocol QuizSelectViewProtocol: AnyObject {

@@ -69,6 +69,8 @@
 		99396BDE29BFEB7B004A9B55 /* SelectedNumberSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99396BDD29BFEB7B004A9B55 /* SelectedNumberSource.swift */; };
 		99396BE029BFEB91004A9B55 /* SelectedNumberSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99396BDF29BFEB91004A9B55 /* SelectedNumberSourceProtocol.swift */; };
 		99396BE229BFED0B004A9B55 /* SelectedNumberSourceModules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99396BE129BFED0B004A9B55 /* SelectedNumberSourceModules.swift */; };
+		99396BE429BFEEAA004A9B55 /* SelectedNumberRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99396BE329BFEEAA004A9B55 /* SelectedNumberRepository.swift */; };
+		99396BE629BFEEC3004A9B55 /* SelectedNumberRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99396BE529BFEEC3004A9B55 /* SelectedNumberRepositoryProtocol.swift */; };
 		99E459C6299A720200E649C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E459C5299A720200E649C1 /* AppDelegate.swift */; };
 		99E459C8299A720200E649C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E459C7299A720200E649C1 /* SceneDelegate.swift */; };
 		99E459CF299A720400E649C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99E459CE299A720400E649C1 /* Assets.xcassets */; };
@@ -135,6 +137,8 @@
 		99396BDD29BFEB7B004A9B55 /* SelectedNumberSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedNumberSource.swift; sourceTree = "<group>"; };
 		99396BDF29BFEB91004A9B55 /* SelectedNumberSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedNumberSourceProtocol.swift; sourceTree = "<group>"; };
 		99396BE129BFED0B004A9B55 /* SelectedNumberSourceModules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedNumberSourceModules.swift; sourceTree = "<group>"; };
+		99396BE329BFEEAA004A9B55 /* SelectedNumberRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedNumberRepository.swift; sourceTree = "<group>"; };
+		99396BE529BFEEC3004A9B55 /* SelectedNumberRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedNumberRepositoryProtocol.swift; sourceTree = "<group>"; };
 		99E459C2299A720200E649C1 /* 10wordsApp_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 10wordsApp_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99E459C5299A720200E649C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99E459C7299A720200E649C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -391,6 +395,8 @@
 			children = (
 				9936AC4C299E747A00F8C258 /* PlanRepository.swift */,
 				9936AC4F299E74B000F8C258 /* PlanRepositoryProtocol.swift */,
+				99396BE329BFEEAA004A9B55 /* SelectedNumberRepository.swift */,
+				99396BE529BFEEC3004A9B55 /* SelectedNumberRepositoryProtocol.swift */,
 				9936AC66299F68A600F8C258 /* QuizWordsRepository.swift */,
 				9936AC68299F68BC00F8C258 /* QuizWordsRepositoryProtocol.swift */,
 				99396BBD29B3B0BE004A9B55 /* APIRepository.swift */,
@@ -523,6 +529,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99396BE629BFEEC3004A9B55 /* SelectedNumberRepositoryProtocol.swift in Sources */,
 				9936AC59299F584B00F8C258 /* PlanSourceProtocol.swift in Sources */,
 				9936AC2D299BD9AD00F8C258 /* QuizListViewController.swift in Sources */,
 				9936AC3F299D010500F8C258 /* ViewControllerFactory.swift in Sources */,
@@ -558,6 +565,7 @@
 				99396BC229B3B988004A9B55 /* InitialQuizWordModel.swift in Sources */,
 				9936AC45299D098F00F8C258 /* QuizShowPresenter.swift in Sources */,
 				9936AC35299CE0E600F8C258 /* HomePresenter.swift in Sources */,
+				99396BE429BFEEAA004A9B55 /* SelectedNumberRepository.swift in Sources */,
 				9936AC3B299CFF0600F8C258 /* QuizSelectPresenter.swift in Sources */,
 				9936AC57299E929800F8C258 /* InitialQuizWords.swift in Sources */,
 				9936AC7329A1130400F8C258 /* UserEditQuizWordModel.swift in Sources */,

@@ -11,13 +11,16 @@ final class QuizSelectPresenter {
     private weak var view: QuizSelectViewProtocol?
     private let planRepository: PlanRepositoryProtocol
     private let quizWordsRepository: QuizWordsRepositoryProtocol
+    private let selectedNumberRepository: SelectedNumberRepositoryProtocol
     private let fetchQuizUseCase: FetchQuizUseCaseProtocol
     
     init(planRepository: PlanRepositoryProtocol,
          quizWordsRepository: QuizWordsRepositoryProtocol,
+         selectedNumberRepository: SelectedNumberRepositoryProtocol,
          fetchQuizUseCase: FetchQuizUseCaseProtocol) {
         self.planRepository = planRepository
         self.quizWordsRepository = quizWordsRepository
+        self.selectedNumberRepository = selectedNumberRepository
         self.fetchQuizUseCase = fetchQuizUseCase
     }
 }
@@ -29,5 +32,9 @@ extension QuizSelectPresenter: QuizSelectProtocol {
 
     func fetchQuizWords() -> [QuizWordEntity] {
         self.fetchQuizUseCase.execute()
+    }
+    
+    func selectedNumberChange(_ row: Int) {
+        self.selectedNumberRepository.set(row)
     }
 }

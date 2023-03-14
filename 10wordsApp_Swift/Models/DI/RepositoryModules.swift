@@ -9,13 +9,17 @@ import Foundation
 
 struct RepositoryModules {
     let planRepository: PlanRepositoryProtocol
+    let selectedNumberRepository: SelectedNumberRepositoryProtocol
     let quizWordsRepository: QuizWordsRepositoryProtocol
     let apiRepository: APIRepositoryProtocol
     
-    static func inject(_ planSourceModules: PlanSourceModules, _ daoModules: DaoModules) -> RepositoryModules {
+    static func inject(_ planSourceModules: PlanSourceModules, _ selectedNumberModules: SelectedNumberSourceModules, _ daoModules: DaoModules) -> RepositoryModules {
         RepositoryModules(
             planRepository: PlanRepository(
                 planSource: planSourceModules.planSource
+            ),
+            selectedNumberRepository: SelectedNumberRepository(
+                selectedNumberSource: selectedNumberModules.selectedNumberSource
             ),
             quizWordsRepository: QuizWordsRepository(
                 initialQuizWords: daoModules.initialQuizWords,
