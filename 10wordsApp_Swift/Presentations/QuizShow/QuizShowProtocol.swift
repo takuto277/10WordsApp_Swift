@@ -17,4 +17,3 @@ protocol QuizShowViewProtocol: AnyObject {
     func didFetchPlan(_ quizPlan: QuizPlan)
     func didFetchQuizWords(_ quizWords: [QuizWordEntity])
 }
-

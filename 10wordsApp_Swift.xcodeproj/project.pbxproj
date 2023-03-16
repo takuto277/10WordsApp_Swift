@@ -71,11 +71,23 @@
 		99396BE229BFED0B004A9B55 /* SelectedNumberSourceModules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99396BE129BFED0B004A9B55 /* SelectedNumberSourceModules.swift */; };
 		99396BE429BFEEAA004A9B55 /* SelectedNumberRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99396BE329BFEEAA004A9B55 /* SelectedNumberRepository.swift */; };
 		99396BE629BFEEC3004A9B55 /* SelectedNumberRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99396BE529BFEEC3004A9B55 /* SelectedNumberRepositoryProtocol.swift */; };
+		99B539DB29C145D400E08735 /* QuizAddPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B539DA29C145D400E08735 /* QuizAddPresenterTests.swift */; };
+		99B539E229C3DF7100E08735 /* MockQuizWordsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B539E129C3DF7100E08735 /* MockQuizWordsRepository.swift */; };
 		99E459C6299A720200E649C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E459C5299A720200E649C1 /* AppDelegate.swift */; };
 		99E459C8299A720200E649C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E459C7299A720200E649C1 /* SceneDelegate.swift */; };
 		99E459CF299A720400E649C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99E459CE299A720400E649C1 /* Assets.xcassets */; };
 		99E459D2299A720400E649C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99E459D0299A720400E649C1 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		99B539DC29C145D400E08735 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99E459BA299A720200E649C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99E459C1299A720200E649C1;
+			remoteInfo = 10wordsApp_Swift;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		9936AC17299A975A00F8C258 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -139,6 +151,9 @@
 		99396BE129BFED0B004A9B55 /* SelectedNumberSourceModules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedNumberSourceModules.swift; sourceTree = "<group>"; };
 		99396BE329BFEEAA004A9B55 /* SelectedNumberRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedNumberRepository.swift; sourceTree = "<group>"; };
 		99396BE529BFEEC3004A9B55 /* SelectedNumberRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedNumberRepositoryProtocol.swift; sourceTree = "<group>"; };
+		99B539D829C145D400E08735 /* 10wordsApp_SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 10wordsApp_SwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		99B539DA29C145D400E08735 /* QuizAddPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizAddPresenterTests.swift; sourceTree = "<group>"; };
+		99B539E129C3DF7100E08735 /* MockQuizWordsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockQuizWordsRepository.swift; sourceTree = "<group>"; };
 		99E459C2299A720200E649C1 /* 10wordsApp_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 10wordsApp_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99E459C5299A720200E649C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99E459C7299A720200E649C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -148,6 +163,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		99B539D529C145D400E08735 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		99E459BF299A720200E649C1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -333,10 +355,19 @@
 			path = CostomCell;
 			sourceTree = "<group>";
 		};
+		99B539D929C145D400E08735 /* 10wordsApp_SwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				99B539DA29C145D400E08735 /* QuizAddPresenterTests.swift */,
+			);
+			path = 10wordsApp_SwiftTests;
+			sourceTree = "<group>";
+		};
 		99E459B9299A720200E649C1 = {
 			isa = PBXGroup;
 			children = (
 				99E459C4299A720200E649C1 /* 10wordsApp_Swift */,
+				99B539D929C145D400E08735 /* 10wordsApp_SwiftTests */,
 				99E459C3299A720200E649C1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -345,6 +376,7 @@
 			isa = PBXGroup;
 			children = (
 				99E459C2299A720200E649C1 /* 10wordsApp_Swift.app */,
+				99B539D829C145D400E08735 /* 10wordsApp_SwiftTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -401,6 +433,7 @@
 				9936AC68299F68BC00F8C258 /* QuizWordsRepositoryProtocol.swift */,
 				99396BBD29B3B0BE004A9B55 /* APIRepository.swift */,
 				99396BBF29B3B0D6004A9B55 /* APIRepositoryProtocol.swift */,
+				99B539E129C3DF7100E08735 /* MockQuizWordsRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -445,6 +478,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		99B539D729C145D400E08735 /* 10wordsApp_SwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99B539DE29C145D400E08735 /* Build configuration list for PBXNativeTarget "10wordsApp_SwiftTests" */;
+			buildPhases = (
+				99B539D429C145D400E08735 /* Sources */,
+				99B539D529C145D400E08735 /* Frameworks */,
+				99B539D629C145D400E08735 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99B539DD29C145D400E08735 /* PBXTargetDependency */,
+			);
+			name = 10wordsApp_SwiftTests;
+			productName = 10wordsApp_SwiftTests;
+			productReference = 99B539D829C145D400E08735 /* 10wordsApp_SwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		99E459C1299A720200E649C1 /* 10wordsApp_Swift */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 99E459D6299A720400E649C1 /* Build configuration list for PBXNativeTarget "10wordsApp_Swift" */;
@@ -477,6 +528,10 @@
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
+					99B539D729C145D400E08735 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 99E459C1299A720200E649C1;
+					};
 					99E459C1299A720200E649C1 = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -500,11 +555,19 @@
 			projectRoot = "";
 			targets = (
 				99E459C1299A720200E649C1 /* 10wordsApp_Swift */,
+				99B539D729C145D400E08735 /* 10wordsApp_SwiftTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		99B539D629C145D400E08735 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		99E459C0299A720200E649C1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -525,6 +588,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		99B539D429C145D400E08735 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99B539DB29C145D400E08735 /* QuizAddPresenterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		99E459BE299A720200E649C1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -563,6 +634,7 @@
 				99396BDB29BE9A93004A9B55 /* QuizSelectCollectionViewCell.swift in Sources */,
 				9936AC29299BD99800F8C258 /* QuizDeleteViewController.swift in Sources */,
 				99396BC229B3B988004A9B55 /* InitialQuizWordModel.swift in Sources */,
+				99B539E229C3DF7100E08735 /* MockQuizWordsRepository.swift in Sources */,
 				9936AC45299D098F00F8C258 /* QuizShowPresenter.swift in Sources */,
 				9936AC35299CE0E600F8C258 /* HomePresenter.swift in Sources */,
 				99396BE429BFEEAA004A9B55 /* SelectedNumberRepository.swift in Sources */,
@@ -589,6 +661,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		99B539DD29C145D400E08735 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99E459C1299A720200E649C1 /* 10wordsApp_Swift */;
+			targetProxy = 99B539DC29C145D400E08735 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		99E459D0299A720400E649C1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -601,6 +681,40 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		99B539DF29C145D400E08735 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.takutoono.-0wordsApp-SwiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/10wordsApp_Swift.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/10wordsApp_Swift";
+			};
+			name = Debug;
+		};
+		99B539E029C145D400E08735 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.takutoono.-0wordsApp-SwiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/10wordsApp_Swift.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/10wordsApp_Swift";
+			};
+			name = Release;
+		};
 		99E459D4299A720400E649C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -770,6 +884,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		99B539DE29C145D400E08735 /* Build configuration list for PBXNativeTarget "10wordsApp_SwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99B539DF29C145D400E08735 /* Debug */,
+				99B539E029C145D400E08735 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		99E459BD299A720200E649C1 /* Build configuration list for PBXProject "10wordsApp_Swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
