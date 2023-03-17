@@ -7,7 +7,7 @@
 		<key>10wordsApp_Swift.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>13</integer>
 		</dict>
 		<key>10wordsApp_SwiftTests.xcscheme_^#shared#^_</key>
 		<dict>
@@ -164,6 +164,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>99B539D729C145D400E08735</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>99E459C1299A720200E649C1</key>
 		<dict>
 			<key>primary</key>
